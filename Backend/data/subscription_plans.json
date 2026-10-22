@@ -1,0 +1,78 @@
+[
+  {
+    "plan_id": "free",
+    "name": "Free Plan",
+    "price": 0,
+    "duration_days": 365,
+    "features": [
+      "1 diagnostic test",
+      "Basic analytics",
+      "50 practice questions per month",
+      "Standard support",
+      "Hermes mentor: 5 chat turns per day",
+      "Syllabus progress tracking"
+    ],
+    "entitlements": {
+      "hermes_chat_daily_cap": 5,
+      "hermes_daily_summary": false,
+      "hermes_score_prediction": false,
+      "hermes_weekly_report": false,
+      "hermes_monthly_report": false
+    },
+    "currency": "INR",
+    "is_active": true,
+    "description": "Get started with basic features to explore the platform"
+  },
+  {
+    "plan_id": "premium_monthly",
+    "name": "Premium Monthly",
+    "price": 99900,
+    "duration_days": 30,
+    "features": [
+      "Unlimited diagnostic tests",
+      "Advanced AI analytics",
+      "Unlimited practice questions",
+      "Personalized study schedules",
+      "Teaching resources for parents",
+      "Progress tracking",
+      "Priority support",
+      "Hermes mentor: 50 chat turns per day",
+      "Daily parent summaries in local language",
+      "JEE score prediction",
+      "Weekly parent reports"
+    ],
+    "entitlements": {
+      "hermes_chat_daily_cap": 50,
+      "hermes_daily_summary": true,
+      "hermes_score_prediction": true,
+      "hermes_weekly_report": true,
+      "hermes_monthly_report": false
+    },
+    "currency": "INR",
+    "is_active": true,
+    "description": "Complete access to all premium features - ₹999 per month"
+  },
+  {
+    "plan_id": "premium_yearly",
+    "name": "Premium Yearly",
+    "price": 999900,
+    "duration_days": 365,
+    "features": [
+      "All Premium Monthly features",
+      "Priority support",
+      "Early access to new features",
+      "Dedicated success manager",
+      "Annual progress reports"
+    ],
+    "entitlements": {
+      "hermes_chat_daily_cap": 50,
+      "hermes_daily_summary": true,
+      "hermes_score_prediction": true,
+      "hermes_weekly_report": true,
+      "hermes_monthly_report": true
+    },
+    "currency": "INR",
+    "is_active": true,
+    "description": "Best value - ₹9,999 per year (Save ₹2,889 compared to monthly)"
+  }
+]

@@ -1,0 +1,828 @@
+{
+  "info": {
+    "name": "Mentor AI Platform API",
+    "description": "Complete API collection for Mentor AI EdTech Platform - JEE/NEET Exam Preparation System",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8000",
+      "type": "string"
+    },
+    {
+      "key": "parent_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "child_token",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "parent_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "child_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "test_id",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "schedule_id",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "item": [
+        {
+          "name": "Health Check",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/health",
+              "host": ["{{base_url}}"],
+              "path": ["health"]
+            }
+          }
+        },
+        {
+          "name": "Root Endpoint",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/",
+              "host": ["{{base_url}}"],
+              "path": [""]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Authentication",
+      "item": [
+        {
+          "name": "Simple Registration",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.collectionVariables.set('parent_id', jsonData.parent_id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Test Parent\",\n  \"email_address\": \"testparent@example.com\",\n  \"password\": \"SecurePass123\",\n  \"repeat_password\": \"SecurePass123\",\n  \"mobile_number\": \"+919876543210\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/register/simple",
+              "host": ["{{base_url}}"],
+              "path": ["api", "auth", "register", "simple"]
+            }
+          }
+        },
+        {
+          "name": "Parent Email Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.collectionVariables.set('parent_token', jsonData.token);",
+                  "    pm.collectionVariables.set('parent_id', jsonData.parent_id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"testparent@example.com\",\n  \"password\": \"SecurePass123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/login/email",
+              "host": ["{{base_url}}"],
+              "path": ["api", "auth", "login", "email"]
+            }
+          }
+        },
+        {
+          "name": "Child Login",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 200) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.collectionVariables.set('child_token', jsonData.token);",
+                  "    pm.collectionVariables.set('child_id', jsonData.student_id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"username\": \"teststudent123\",\n  \"password\": \"StudentPass123\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/auth/login/child",
+              "host": ["{{base_url}}"],
+              "path": ["api", "auth", "login", "child"]
+            }
+          }
+        },
+        {
+          "name": "Get Current User",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{parent_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/auth/me",
+              "host": ["{{base_url}}"],
+              "path": ["api", "auth", "me"]
+            }
+          }
+        },
+        {
+          "name": "Logout",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{parent_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/auth/logout",
+              "host": ["{{base_url}}"],
+              "path": ["api", "auth", "logout"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Onboarding",
+      "item": [
+        {
+          "name": "Set Preferences",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"language\": \"en\",\n  \"email_notifications\": true,\n  \"sms_notifications\": true,\n  \"push_notifications\": true,\n  \"teaching_involvement\": \"medium\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/onboarding/preferences?parent_id={{parent_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "onboarding", "preferences"],
+              "query": [
+                {
+                  "key": "parent_id",
+                  "value": "{{parent_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Preferences",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/onboarding/preferences?parent_id={{parent_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "onboarding", "preferences"],
+              "query": [
+                {
+                  "key": "parent_id",
+                  "value": "{{parent_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Create Child Profile",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.collectionVariables.set('child_id', jsonData.child_id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Rahul Sharma\",\n  \"age\": 16,\n  \"grade\": 11,\n  \"current_level\": \"intermediate\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/onboarding/child?parent_id={{parent_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "onboarding", "child"],
+              "query": [
+                {
+                  "key": "parent_id",
+                  "value": "{{parent_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Child Profile",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/onboarding/child?parent_id={{parent_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "onboarding", "child"],
+              "query": [
+                {
+                  "key": "parent_id",
+                  "value": "{{parent_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Available Exams",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/onboarding/exams/available",
+              "host": ["{{base_url}}"],
+              "path": ["api", "onboarding", "exams", "available"]
+            }
+          }
+        },
+        {
+          "name": "Select Exam",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.collectionVariables.set('test_id', jsonData.diagnostic_test_id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"exam_type\": \"JEE_MAIN\",\n  \"exam_date\": \"2025-04-15T00:00:00Z\",\n  \"subject_preferences\": {\n    \"Physics\": 40,\n    \"Chemistry\": 30,\n    \"Mathematics\": 30\n  }\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/onboarding/exam/select?parent_id={{parent_id}}&child_id={{child_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "onboarding", "exam", "select"],
+              "query": [
+                {
+                  "key": "parent_id",
+                  "value": "{{parent_id}}"
+                },
+                {
+                  "key": "child_id",
+                  "value": "{{child_id}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Onboarding Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/onboarding/status?parent_id={{parent_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "onboarding", "status"],
+              "query": [
+                {
+                  "key": "parent_id",
+                  "value": "{{parent_id}}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Study Center",
+      "item": [
+        {
+          "name": "Get Topics",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/study-center/topics?student_id={{child_id}}&subject=Physics",
+              "host": ["{{base_url}}"],
+              "path": ["api", "study-center", "topics"],
+              "query": [
+                {
+                  "key": "student_id",
+                  "value": "{{child_id}}"
+                },
+                {
+                  "key": "subject",
+                  "value": "Physics"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Topic Details",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/study-center/topics/T01",
+              "host": ["{{base_url}}"],
+              "path": ["api", "study-center", "topics", "T01"]
+            }
+          }
+        },
+        {
+          "name": "Get Learning Materials",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/study-center/materials/T01",
+              "host": ["{{base_url}}"],
+              "path": ["api", "study-center", "materials", "T01"]
+            }
+          }
+        },
+        {
+          "name": "Start Learning Session",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"student_id\": \"{{child_id}}\",\n  \"topic_id\": \"T01\",\n  \"topic_name\": \"Kinematics\",\n  \"subject\": \"Physics\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/study-center/progress/start",
+              "host": ["{{base_url}}"],
+              "path": ["api", "study-center", "progress", "start"]
+            }
+          }
+        },
+        {
+          "name": "Get Progress",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/study-center/progress/{{child_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "study-center", "progress", "{{child_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Diagnostic Tests",
+      "item": [
+        {
+          "name": "Schedule Test",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.collectionVariables.set('test_id', jsonData.test_id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{parent_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"child_id\": \"{{child_id}}\",\n  \"exam_type\": \"JEE_MAIN\",\n  \"scheduled_date\": \"2025-01-20T09:00:00Z\",\n  \"test_id\": \"test_{{$timestamp}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/diagnostic-test/schedule",
+              "host": ["{{base_url}}"],
+              "path": ["api", "diagnostic-test", "schedule"]
+            }
+          }
+        },
+        {
+          "name": "Start Test",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"student_id\": \"{{child_id}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/diagnostic-test/{{test_id}}/start",
+              "host": ["{{base_url}}"],
+              "path": ["api", "diagnostic-test", "{{test_id}}", "start"]
+            }
+          }
+        },
+        {
+          "name": "Submit Test",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"test_id\": \"{{test_id}}\",\n  \"student_id\": \"{{child_id}}\",\n  \"answers\": {\n    \"1\": \"A\",\n    \"2\": \"B\",\n    \"3\": \"C\"\n  },\n  \"time_taken\": 10800,\n  \"submission_time\": \"{{$isoTimestamp}}\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/diagnostic-test/{{test_id}}/submit",
+              "host": ["{{base_url}}"],
+              "path": ["api", "diagnostic-test", "{{test_id}}", "submit"]
+            }
+          }
+        },
+        {
+          "name": "Get Test Results",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/diagnostic-test/{{test_id}}/results",
+              "host": ["{{base_url}}"],
+              "path": ["api", "diagnostic-test", "{{test_id}}", "results"]
+            }
+          }
+        },
+        {
+          "name": "Get Test Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/diagnostic-test/{{test_id}}/status",
+              "host": ["{{base_url}}"],
+              "path": ["api", "diagnostic-test", "{{test_id}}", "status"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Schedule Management",
+      "item": [
+        {
+          "name": "Generate Schedule",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.collectionVariables.set('schedule_id', jsonData.schedule_id);",
+                  "}"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{parent_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"student_id\": \"{{child_id}}\",\n  \"analytics_id\": \"analytics_123\",\n  \"exam_type\": \"JEE_MAIN\",\n  \"exam_date\": \"2025-04-15\",\n  \"daily_study_hours\": 5.0\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/schedule/generate",
+              "host": ["{{base_url}}"],
+              "path": ["api", "schedule", "generate"]
+            }
+          }
+        },
+        {
+          "name": "Get Schedule",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{parent_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/schedule/{{schedule_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "schedule", "{{schedule_id}}"]
+            }
+          }
+        },
+        {
+          "name": "Get Today's Tasks",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/schedule/progress/today?schedule_id={{schedule_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "schedule", "progress", "today"],
+              "query": [
+                {
+                  "key": "schedule_id",
+                  "value": "{{schedule_id}}"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Payment",
+      "item": [
+        {
+          "name": "Get Plans",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/api/payment/plans",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payment", "plans"]
+            }
+          }
+        },
+        {
+          "name": "Create Order",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{parent_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"parent_id\": \"{{parent_id}}\",\n  \"plan_id\": \"premium_monthly\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/payment/create-order",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payment", "create-order"]
+            }
+          }
+        },
+        {
+          "name": "Get Subscription Status",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{parent_token}}"
+              }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/payment/subscription/{{parent_id}}",
+              "host": ["{{base_url}}"],
+              "path": ["api", "payment", "subscription", "{{parent_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "AI Features",
+      "item": [
+        {
+          "name": "Vector Search",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{child_token}}"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"What are Newton's laws of motion?\",\n  \"top_k\": 5,\n  \"filters\": {\n    \"exam\": \"JEE_MAIN\",\n    \"subject\": \"Physics\"\n  },\n  \"include_metadata\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/vector-search/query",
+              "host": ["{{base_url}}"],
+              "path": ["api", "vector-search", "query"]
+            }
+          }
+        },
+        {
+          "name": "RAG Generate Questions",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"topic\": \"Limits and Continuity\",\n  \"exam_type\": \"JEE_MAIN\",\n  \"difficulty\": \"medium\",\n  \"num_questions\": 5,\n  \"include_explanations\": true\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/rag/generate-questions",
+              "host": ["{{base_url}}"],
+              "path": ["api", "rag", "generate-questions"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

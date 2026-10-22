@@ -1,0 +1,494 @@
+{
+  "exam": "JEE_MAIN",
+  "subject": "Mathematics",
+  "version": "2024",
+  "total_chapters": 14,
+  "chapters": [
+    {
+      "chapter_id": "CH01",
+      "chapter_name": "Sets, Relations and Functions",
+      "weightage": 5,
+      "description": "Fundamental concepts of sets, relations, and functions",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Sets and Their Representation",
+          "difficulty": "easy",
+          "weightage": 2,
+          "description": "Representation and operations on sets",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Set Representation and Operations",
+              "content": "Sets and their representation; Union, intersection and complement of sets and their algebraic properties; Power set; Relations, type of relations, equivalence relations, functions; one-one, into and onto functions, the composition of functions.",
+              "key_concepts": ["Set representation", "Union and intersection", "Complement", "Power set", "Relations", "Functions"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Relations and Functions",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Types of relations and functions",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Types of Relations and Functions",
+              "content": "Relations, type of relations, equivalence relations, functions; one-one, into and onto functions, the composition of functions.",
+              "key_concepts": ["Relations", "Equivalence relations", "One-one functions", "Onto functions", "Composition of functions"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH02",
+      "chapter_name": "Complex Numbers and Quadratic Equations",
+      "weightage": 8,
+      "description": "Complex number operations and quadratic equations",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Complex Numbers",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Operations and representation of complex numbers",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Complex Number Operations",
+              "content": "Complex numbers as ordered pairs of reals, Representation of complex numbers in the form a+ib and their representation in a plane, Argand diagram, algebra of complex numbers, modulus and argument (or amplitude) of a complex number.",
+              "key_concepts": ["Complex numbers", "Argand diagram", "Modulus", "Argument", "Algebra of complex numbers"],
+              "difficulty": "medium",
+              "formulas": ["z = a + ib", "|z| = √(a² + b²)"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Quadratic Equations",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Solutions and properties of quadratic equations",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Quadratic Equations in Real and Complex Systems",
+              "content": "Quadratic equations in real and complex number systems and their solutions; Relations between roots and coefficients, nature of roots, the formation of quadratic equations with given roots.",
+              "key_concepts": ["Quadratic equations", "Nature of roots", "Relations between roots and coefficients"],
+              "difficulty": "medium",
+              "formulas": ["x = [-b ± √(b² - 4ac)]/(2a)", "α + β = -b/a", "αβ = c/a"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH03",
+      "chapter_name": "Matrices and Determinants",
+      "weightage": 6,
+      "description": "Matrix operations and determinant properties",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Matrices",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Matrix algebra and types",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Matrix Operations and Types",
+              "content": "Matrices, algebra of matrices, type of matrices, determinants and matrices of order two and three, evaluation of determinants, area of triangles using determinants.",
+              "key_concepts": ["Matrix types", "Matrix algebra", "Determinants", "Area of triangles"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Determinants and Applications",
+          "difficulty": "hard",
+          "weightage": 3,
+          "description": "Determinant evaluation and applications",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Determinants and Linear Equations",
+              "content": "Adjoint and inverse of a square matrix; Test of consistency and solution of simultaneous linear equations in two or three variables using matrices.",
+              "key_concepts": ["Adjoint", "Inverse", "Linear equations", "Consistency"],
+              "difficulty": "hard",
+              "formulas": ["A⁻¹ = adj(A)/|A|"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH04",
+      "chapter_name": "Permutations and Combinations",
+      "weightage": 4,
+      "description": "Counting principles and arrangements",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Fundamental Counting",
+          "difficulty": "easy",
+          "weightage": 2,
+          "description": "Basic counting principles",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Counting Principles",
+              "content": "The fundamental principle of counting, permutations and combinations; Meaning of P(n,r) and C(n,r). Simple applications.",
+              "key_concepts": ["Fundamental principle", "Permutations", "Combinations"],
+              "difficulty": "easy",
+              "formulas": ["n! = n(n-1)(n-2)...", "ⁿPᵣ = n!/(n-r)!", "ⁿCᵣ = n!/[r!(n-r)!]"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Applications of Counting",
+          "difficulty": "medium",
+          "weightage": 2,
+          "description": "Practical applications of counting",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Simple Applications",
+              "content": "Simple applications of permutations and combinations.",
+              "key_concepts": ["Applications", "Problem solving"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH05",
+      "chapter_name": "Binomial Theorem and Its Simple Applications",
+      "weightage": 4,
+      "description": "Binomial expansion and applications",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Binomial Theorem",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Binomial expansion and properties",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Binomial Expansion",
+              "content": "Binomial theorem for a positive integral index, general term and middle term and simple applications.",
+              "key_concepts": ["Binomial theorem", "General term", "Middle term"],
+              "difficulty": "medium",
+              "formulas": ["(a + b)ⁿ = Σ(k=0 to n) ⁿCₖ aⁿ⁻ᵏ bᵏ", "Tᵣ₊₁ = ⁿCᵣ aⁿ⁻ʳ bʳ"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH06",
+      "chapter_name": "Sequence and Series",
+      "weightage": 5,
+      "description": "Arithmetic and geometric progressions",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Progressions",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Arithmetic and geometric progressions",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "AP and GP",
+              "content": "Arithmetic and Geometric progressions, insertion of arithmetic, geometric means between two given numbers, Relation between A.M and G.M.",
+              "key_concepts": ["Arithmetic progression", "Geometric progression", "Means", "A.M and G.M relation"],
+              "difficulty": "medium",
+              "formulas": ["aₙ = a + (n-1)d", "Sₙ = n/2[2a + (n-1)d]", "aₙ = ar^(n-1)", "Sₙ = a(r^n - 1)/(r - 1)"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH07",
+      "chapter_name": "Limit, Continuity and Differentiability",
+      "weightage": 8,
+      "description": "Fundamental calculus concepts",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Limits and Continuity",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Limit and continuity concepts",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Limit and Continuity",
+              "content": "Real-valued functions, algebra of functions; polynomial, rational, trigonometric, logarithmic and exponential functions; inverse functions. Graphs of simple functions. Limits, continuity and differentiability.",
+              "key_concepts": ["Real-valued functions", "Algebra of functions", "Graphs", "Limits", "Continuity"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Differentiability",
+          "difficulty": "hard",
+          "weightage": 5,
+          "description": "Differentiation rules and applications",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Differentiation and Applications",
+              "content": "Differentiation of the sum, difference, product and quotient of two functions. Differentiation of trigonometric, inverse trigonometric, logarithmic, exponential, composite and implicit functions; derivatives of order up to two, Applications of derivatives: Rate of change of quantities, monotonic-Increasing and decreasing functions, Maxima and minima of functions of one variable.",
+              "key_concepts": ["Differentiation rules", "Trigonometric derivatives", "Applications of derivatives", "Maxima and minima"],
+              "difficulty": "hard",
+              "formulas": ["d/dx(uv) = u'v + uv'", "d/dx(u/v) = (u'v - uv')/v²", "f'(c) = 0 for extrema"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH08",
+      "chapter_name": "Integral Calculus",
+      "weightage": 8,
+      "description": "Integration techniques and applications",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Indefinite Integration",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Integration methods",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Integration Techniques",
+              "content": "Integral as an anti-derivative, Fundamental integrals involving algebraic, trigonometric, exponential and logarithmic functions. Integration by substitution, by parts and by partial fractions. Integration using trigonometric identities.",
+              "key_concepts": ["Anti-derivative", "Fundamental integrals", "Integration methods"],
+              "difficulty": "hard",
+              "formulas": ["∫x^n dx = x^(n+1)/(n+1) + C", "∫udv = uv - ∫vdu"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Definite Integration",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Definite integrals and applications",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Definite Integrals and Applications",
+              "content": "The fundamental theorem of calculus, properties of definite integrals. Evaluation of definite integrals, determining areas of the regions bounded by simple curves by simple curves in standard forms.",
+              "key_concepts": ["Fundamental theorem", "Properties of definite integrals", "Area calculation"],
+              "difficulty": "hard",
+              "formulas": ["∫[a to b]f(x)dx = F(b) - F(a)"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH09",
+      "chapter_name": "Differential Equations",
+      "weightage": 4,
+      "description": "First-order differential equations",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "First Order Differential Equations",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Formation and solution of differential equations",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Differential Equations",
+              "content": "Ordinary differential equations, their order and degree, the solution of differential equation by the method of separation of variables, solution of a homogeneous and linear differential equation of the type dy/dx + p(x)y = q(x).",
+              "key_concepts": ["Order and degree", "Separation of variables", "Linear differential equations"],
+              "difficulty": "hard",
+              "formulas": ["dy/dx = f(x)g(y) → ∫dy/g(y) = ∫f(x)dx", "Integrating factor = e^(∫P dx)"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH10",
+      "chapter_name": "Co-ordinate Geometry",
+      "weightage": 10,
+      "description": "Analytical geometry of lines and conics",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Straight Lines",
+          "difficulty": "easy",
+          "weightage": 4,
+          "description": "Equations and properties of straight lines",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Straight Line Equations",
+              "content": "Cartesian system of rectangular coordinates in a plane, distance formula, sections formula, locus and its equation, the slope of a line, parallel and perpendicular lines, intercepts of a line on the co-ordinate axis. Straight line: Various forms of equations of a line, intersection of lines, angles between two lines, conditions for concurrence of three lines, the distance of a point from a line, co-ordinate of the centroid, orthocentre and circumcentre of a triangle.",
+              "key_concepts": ["Cartesian system", "Distance formula", "Section formula", "Line equations", "Triangle centers"],
+              "difficulty": "easy",
+              "formulas": ["d = √[(x₂-x₁)² + (y₂-y₁)²]", "m = (y₂-y₁)/(x₂-x₁)", "y = mx + c"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Circles and Conic Sections",
+          "difficulty": "hard",
+          "weightage": 6,
+          "description": "Circles and conic sections",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Circles and Conics",
+              "content": "Circle, conic sections: A standard form of equations of a circle, the general form of the equation of a circle, its radius and centre, equation of a circle when the endpoints of a diameter are given, points of intersection of a line and a circle with the centre at the origin and sections of conics, equations of conic sections (parabola, ellipse and hyperbola) in standard forms.",
+              "key_concepts": ["Circle equations", "Parabola", "Ellipse", "Hyperbola", "Standard forms"],
+              "difficulty": "hard",
+              "formulas": ["(x-h)² + (y-k)² = r²", "y² = 4ax", "x²/a² + y²/b² = 1", "x²/a² - y²/b² = 1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH11",
+      "chapter_name": "Three Dimensional Geometry",
+      "weightage": 5,
+      "description": "3D coordinate geometry",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "3D Geometry",
+          "difficulty": "hard",
+          "weightage": 5,
+          "description": "Lines and planes in 3D space",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "3D Geometry Concepts",
+              "content": "Coordinates of a point in space, the distance between two points, section formula, direction ratios and direction cosines and the angle between two intersecting lines. Equation of a line; Skew lines, the shortest distance between them and its equation.",
+              "key_concepts": ["3D coordinates", "Distance formula", "Direction ratios", "Direction cosines", "Skew lines"],
+              "difficulty": "hard",
+              "formulas": ["d = √[(x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²]", "l² + m² + n² = 1"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH12",
+      "chapter_name": "Vector Algebra",
+      "weightage": 5,
+      "description": "Vector operations and properties",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Vector Operations",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Vector algebra and products",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Vector Algebra",
+              "content": "Vectors and scalars, the addition of vectors, components of a vector in two dimensions and three-dimensional spaces, scalar and vector products.",
+              "key_concepts": ["Vectors", "Scalars", "Vector addition", "Scalar product", "Vector product"],
+              "difficulty": "medium",
+              "formulas": ["a⃗·b⃗ = |a⃗||b⃗|cos θ", "a⃗×b⃗ = |a⃗||b⃗|sin θ n̂"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH13",
+      "chapter_name": "Statistics and Probability",
+      "weightage": 6,
+      "description": "Statistical measures and probability",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Statistics",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Measures of dispersion",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Measures of Dispersion",
+              "content": "Measures of dispersion; calculation of mean, median, mode of grouped and ungrouped data, calculation of standard deviation, variance and mean deviation for grouped and ungrouped data.",
+              "key_concepts": ["Mean", "Median", "Mode", "Standard deviation", "Variance"],
+              "difficulty": "medium",
+              "formulas": ["σ = √[Σ(x-μ)²/n]", "σ² = Σ(x-μ)²/n"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Probability",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Probability concepts and theorems",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Probability Concepts",
+              "content": "Probability: Probability of an event, addition and multiplication theorems of probability, Baye's theorem, probability distribution of a random variable.",
+              "key_concepts": ["Probability", "Addition theorem", "Multiplication theorem", "Baye's theorem"],
+              "difficulty": "medium",
+              "formulas": ["P(A∪B) = P(A) + P(B) - P(A∩B)", "P(A|B) = P(A∩B)/P(B)"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH14",
+      "chapter_name": "Trigonometry",
+      "weightage": 6,
+      "description": "Trigonometric functions and identities",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Trigonometric Functions and Identities",
+          "difficulty": "medium",
+          "weightage": 6,
+          "description": "Trigonometric identities and functions",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Trigonometry Concepts",
+              "content": "Trigonometrical identities and trigonometrical functions, inverse trigonometrical functions their properties.",
+              "key_concepts": ["Trigonometric identities", "Trigonometric functions", "Inverse trigonometric functions"],
+              "difficulty": "medium",
+              "formulas": ["sin²θ + cos²θ = 1", "1 + tan²θ = sec²θ", "sin⁻¹(-x) = -sin⁻¹x"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

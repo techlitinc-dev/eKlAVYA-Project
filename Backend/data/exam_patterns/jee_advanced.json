@@ -1,0 +1,49 @@
+{
+  "exam_name": "JEE Advanced",
+  "total_questions": 54,
+  "subjects": [
+    {
+      "name": "Physics",
+      "question_count": 18,
+      "weightage": 33.33
+    },
+    {
+      "name": "Chemistry",
+      "question_count": 18,
+      "weightage": 33.33
+    },
+    {
+      "name": "Mathematics",
+      "question_count": 18,
+      "weightage": 33.34
+    }
+  ],
+  "question_types": [
+    {
+      "type": "MCQ",
+      "count_per_subject": 8,
+      "marks": 3.0
+    },
+    {
+      "type": "MSQ",
+      "count_per_subject": 6,
+      "marks": 4.0
+    },
+    {
+      "type": "Numerical",
+      "count_per_subject": 4,
+      "marks": 3.0
+    }
+  ],
+  "marking_scheme": {
+    "correct_marks": 3.0,
+    "incorrect_marks": -1.0,
+    "unattempted_marks": 0.0
+  },
+  "duration_minutes": 180,
+  "difficulty_distribution": {
+    "easy": 20.0,
+    "medium": 50.0,
+    "hard": 30.0
+  }
+}

@@ -1,0 +1,492 @@
+{
+  "exam": "JEE_MAIN",
+  "subject": "Physics",
+  "version": "2024",
+  "total_chapters": 5,
+  "chapters": [
+    {
+      "chapter_id": "CH01",
+      "chapter_name": "Mechanics",
+      "weightage": 25,
+      "description": "Kinematics, laws of motion, work, energy, and rotational motion",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Units and Measurements",
+          "difficulty": "easy",
+          "weightage": 2,
+          "description": "Units of measurement and dimensional analysis",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Units and Dimensions",
+              "content": "Units of measurements, System of units, SI Units, fundamental and derived units, least count, significant figures, Errors in measurements. Dimensions of Physics quantities, dimensional analysis and its applications.",
+              "key_concepts": ["SI units", "Fundamental units", "Derived units", "Dimensional analysis", "Significant figures"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Kinematics",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Motion in straight line and plane",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Motion in Straight Line",
+              "content": "The frame of reference, motion in a straight line, speed and velocity, uniform and non-uniform motion, average speed and instantaneous velocity, uniformly accelerated motion, velocity-time, position-time graph, relations for uniformly accelerated motion, relative velocity.",
+              "key_concepts": ["Frame of reference", "Speed and velocity", "Uniform acceleration", "Kinematic equations", "Relative velocity"],
+              "difficulty": "medium",
+              "formulas": ["v = u + at", "s = ut + 1/2at²", "v² = u² + 2as"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Motion in Plane",
+              "content": "Motion in a plane, projectile motion, uniform circular motion.",
+              "key_concepts": ["Projectile motion", "Circular motion", "Angular velocity", "Centripetal acceleration"],
+              "difficulty": "medium",
+              "formulas": ["Range = u²sin(2θ)/g", "Time of flight = 2usinθ/g", "Centripetal force = mv²/r"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Laws of Motion",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Newton's laws and friction",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Newton's Laws",
+              "content": "Force and inertia, Newton's first law of motion, momentum, Newton's second Law of motion, impulse, Newton's third Law of motion. Law of conservation of linear momentum and its applications, equilibrium of concurrent forces.",
+              "key_concepts": ["Newton's laws", "Momentum", "Impulse", "Conservation of momentum", "Equilibrium"],
+              "difficulty": "medium",
+              "formulas": ["F = ma", "p = mv", "J = FΔt = Δp"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Friction",
+              "content": "Static and Kinetic friction, laws of friction, rolling friction.",
+              "key_concepts": ["Static friction", "Kinetic friction", "Coefficient of friction", "Rolling friction"],
+              "difficulty": "medium",
+              "formulas": ["f ≤ μsN", "fk = μkN"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Work, Energy and Power",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Work-energy theorem and power",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Work and Energy",
+              "content": "Work done by a constant force and a variable force, kinetic and potential energies, work-energy theorem, power. The potential energy of a spring, conservation of mechanical energy, conservative and non-conservative forces, motion in a vertical circle. Elastic and inelastic collisions in one and two dimensions.",
+              "key_concepts": ["Work", "Kinetic energy", "Potential energy", "Work-energy theorem", "Conservation of energy"],
+              "difficulty": "medium",
+              "formulas": ["W = F·d", "KE = 1/2mv²", "PE = mgh", "Power = W/t = F·v"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T05",
+          "topic_name": "Rotational Motion",
+          "difficulty": "hard",
+          "weightage": 5,
+          "description": "Rotational dynamics and moment of inertia",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Rotational Dynamics",
+              "content": "Centre of mass of a two-particle system, centre of mass of a rigid body. Basic concepts of rotational motion, moment of a force, torque, angular momentum, conservation of angular momentum and its applications. The moment of inertia, the radius of gyration, values of moments of inertia for simple geometrical objects, parallel and perpendicular axes theorems and their applications. Equilibrium of rigid bodies, rigid body rotation and equations of rotational motion, comparison of linear and rotational motions.",
+              "key_concepts": ["Centre of mass", "Torque", "Angular momentum", "Moment of inertia", "Parallel axis theorem"],
+              "difficulty": "hard",
+              "formulas": ["τ = r × F", "L = r × p", "I = Icm + Md²", "τ = Iα"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T06",
+          "topic_name": "Gravitation",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Universal gravitation and satellite motion",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Universal Gravitation",
+              "content": "The universal law of gravitation. Acceleration due to gravity and its variation with altitude and depth. Kepler's law of planetary motion. Gravitational potential energy, gravitational potential. Escape velocity, motion of a satellite, orbital velocity, time period and energy of satellite.",
+              "key_concepts": ["Universal gravitation", "Acceleration due to gravity", "Kepler's laws", "Orbital motion", "Escape velocity"],
+              "difficulty": "medium",
+              "formulas": ["F = Gm₁m₂/r²", "g = GM/r²", "v_escape = √(2GM/R)", "v_orbital = √(GM/r)"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH02",
+      "chapter_name": "Thermodynamics and Fluid Mechanics",
+      "weightage": 20,
+      "description": "Properties of matter, thermodynamics, and fluid mechanics",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Properties of Solids and Liquids",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Elastic behavior and fluid properties",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Elastic Behavior",
+              "content": "Elastic behaviour, stress-strain relationship, Hooke's Law, Young's modulus, bulk modulus and modulus of rigidity.",
+              "key_concepts": ["Stress", "Strain", "Hooke's law", "Young's modulus", "Bulk modulus"],
+              "difficulty": "medium",
+              "formulas": ["F = kx", "Y = stress/strain", "K = -V(dP/dV)"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Fluid Properties",
+              "content": "Pressure due to a fluid column, Pascal's law and its applications, effect of gravity on fluid pressure, viscosity, Stoke's law, terminal velocity, streamline and turbulent flow, critical velocity, Bernoulli's principle and its applications. Surface energy and surface tension, angle of contact, excess of pressure across a curved surface, application of surface tension: drops, bubbles and capillary rise.",
+              "key_concepts": ["Pressure", "Viscosity", "Bernoulli's principle", "Surface tension", "Capillary action"],
+              "difficulty": "medium",
+              "formulas": ["P = ρgh", "F = 6πηrv", "Bernoulli: P + 1/2ρv² + ρgh = constant"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Thermodynamics",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Laws of thermodynamics",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Laws of Thermodynamics",
+              "content": "Thermal equilibrium and the concept of temperature, zeroth law of thermodynamics, heat, work and internal energy. The first law of thermodynamics, isothermal and adiabatic processes. The second law of thermodynamics: reversible and irreversible processes.",
+              "key_concepts": ["Zeroth law", "First law", "Second law", "Internal energy", "Entropy"],
+              "difficulty": "medium",
+              "formulas": ["ΔU = Q - W", "PV^γ = constant", "ΔS ≥ 0 for irreversible processes"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Kinetic Theory of Gases",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Molecular interpretation of gases",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Kinetic Theory",
+              "content": "Equation of state of a perfect gas, work done on compressing a gas, kinetic theory of gases: assumptions, the concept of pressure, kinetic interpretation of temperature, RMS speed of gas molecules, degrees of freedom, law of equipartition of energy and applications to specific heat capacities of gases, mean free path, Avogadro's number.",
+              "key_concepts": ["Ideal gas equation", "Kinetic theory", "RMS velocity", "Degrees of freedom", "Mean free path"],
+              "difficulty": "medium",
+              "formulas": ["PV = nRT", "v_rms = √(3kT/m)", "KE_avg = 3/2kT"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Oscillations and Waves",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Simple harmonic motion and wave motion",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Simple Harmonic Motion",
+              "content": "Oscillations and periodic motion: time period, frequency, displacement as a function of time, periodic functions. Simple harmonic motion (S.H.M.) and its equation, phase, oscillations of a spring: restoring force and force constant, energy in S.H.M.: kinetic and potential energies, simple pendulum: derivation of expression for its time period.",
+              "key_concepts": ["SHM", "Amplitude", "Frequency", "Phase", "Energy in SHM"],
+              "difficulty": "medium",
+              "formulas": ["x = Asin(ωt + φ)", "T = 2π√(m/k)", "T = 2π√(l/g)"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Wave Motion",
+              "content": "Wave motion, longitudinal and transverse waves, speed of the travelling wave, displacement relation for a progressive wave, principle of superposition of waves, reflection of waves, standing waves in strings and organ pipes, fundamental mode and harmonics, beats.",
+              "key_concepts": ["Wave types", "Wave speed", "Superposition", "Standing waves", "Harmonics"],
+              "difficulty": "medium",
+              "formulas": ["v = fλ", "y = Asin(kx - ωt)", "Beat frequency = |f₁ - f₂|"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH03",
+      "chapter_name": "Electromagnetism",
+      "weightage": 25,
+      "description": "Electrostatics, current electricity, and magnetism",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Electrostatics",
+          "difficulty": "medium",
+          "weightage": 6,
+          "description": "Electric charges, fields, and potential",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Electric Charges and Fields",
+              "content": "Electric charges: conservation of charge, Coulomb's law forces between two point charges, forces between multiple charges, superposition principle and continuous charge distribution. Electric field: electric field due to a point charge, electric field lines, electric dipole, electric field due to a dipole, torque on a dipole in a uniform electric field.",
+              "key_concepts": ["Coulomb's law", "Electric field", "Electric dipole", "Superposition principle", "Field lines"],
+              "difficulty": "medium",
+              "formulas": ["F = kq₁q₂/r²", "E = F/q", "E = kq/r²", "τ = p × E"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Gauss's Law",
+              "content": "Electric flux, Gauss's law and its applications to find field due to infinitely long uniformly charged straight wire, uniformly charged infinite plane sheet and uniformly charged thin spherical shell.",
+              "key_concepts": ["Electric flux", "Gauss's law", "Gaussian surface", "Field calculations"],
+              "difficulty": "medium",
+              "formulas": ["Φ_E = ∮E·dA = Q/ε₀"]
+            },
+            {
+              "subtopic_id": "ST03",
+              "subtopic_name": "Electric Potential and Capacitance",
+              "content": "Electric potential and its calculation for a point charge, electric dipole and system of charges, potential difference, equipotential surfaces, electrical potential energy of a system of two point charges and of electric dipole in an electrostatic field. Conductors and insulators, dielectrics and electric polarization, capacitors and capacitance, the combination of capacitors in series and parallel and capacitance of a parallel plate capacitor with and without dielectric medium between the plates, energy stored in a capacitor.",
+              "key_concepts": ["Electric potential", "Equipotential surfaces", "Capacitance", "Dielectrics", "Energy in capacitors"],
+              "difficulty": "medium",
+              "formulas": ["V = kq/r", "C = Q/V", "C_parallel = C₁ + C₂", "1/C_series = 1/C₁ + 1/C₂", "U = 1/2CV²"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Current Electricity",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Electric current and circuits",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Electric Current and Resistance",
+              "content": "Electric current: drift velocity, mobility and their relation with electric current, Ohm's law, electrical resistance, I-V characteristics of Ohmic and non-ohmic conductors, electrical energy and power, electrical resistivity and conductivity, series and parallel combinations of resistors, temperature dependence of resistance.",
+              "key_concepts": ["Electric current", "Drift velocity", "Ohm's law", "Resistance", "Resistivity"],
+              "difficulty": "medium",
+              "formulas": ["I = neAv_d", "V = IR", "P = VI = I²R = V²/R", "ρ = RA/l"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Cells and Kirchhoff's Laws",
+              "content": "Internal resistance, potential difference and emf of a cell, a combination of cells in series and parallel. Kirchhoff's laws and their applications, Wheatstone bridge, Metre Bridge.",
+              "key_concepts": ["EMF", "Internal resistance", "Kirchhoff's laws", "Wheatstone bridge"],
+              "difficulty": "medium",
+              "formulas": ["V = ε - Ir", "ΣI_in = ΣI_out", "ΣV = 0", "Balance condition: R₁/R₂ = R₃/R₄"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Magnetic Effects of Current and Magnetism",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Magnetic fields and electromagnetic induction",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Magnetic Fields",
+              "content": "Biot-Savart law and its application to the current carrying circular loop, Ampere's law and its applications to infinitely long current carrying straight wire and solenoid. Force on a moving charge in uniform magnetic and electric fields, force on a current-carrying conductor in a uniform magnetic field, the force between two parallel currents carrying conductors-definition of ampere, torque experienced by a current loop in a uniform magnetic field: Moving coil galvanometer, its sensitivity and conversion to ammeter and voltmeter.",
+              "key_concepts": ["Biot-Savart law", "Ampere's law", "Lorentz force", "Galvanometer"],
+              "difficulty": "medium",
+              "formulas": ["dB = (μ₀/4π)(Idl×r̂)/r²", "F = q(v×B)", "F = IL×B"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Magnetism",
+              "content": "Current loop as a magnetic dipole and its magnetic dipole moment, bar magnet as an equivalent solenoid, magnetic field lines, magnetic field due to a magnetic dipole (bar magnet) along its axis and perpendicular to its axis, torque on a magnetic dipole in a uniform magnetic field, para-, dia-and ferromagnetic substances with examples, the effect of temperature on magnetic properties.",
+              "key_concepts": ["Magnetic dipole", "Bar magnet", "Magnetic materials", "Curie temperature"],
+              "difficulty": "medium",
+              "formulas": ["τ = m × B", "M = IA", "μ = m/V"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Electromagnetic Induction and Alternating Currents",
+          "difficulty": "hard",
+          "weightage": 5,
+          "description": "Induced EMF and AC circuits",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Electromagnetic Induction",
+              "content": "Electromagnetic induction: Faraday's law, induced emf and current, Lenz's law, eddy currents, self and mutual inductance.",
+              "key_concepts": ["Faraday's law", "Lenz's law", "Self-inductance", "Mutual inductance", "Eddy currents"],
+              "difficulty": "hard",
+              "formulas": ["ε = -dΦ/dt", "L = NΦ/I", "ε = -L(dI/dt)"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Alternating Current",
+              "content": "Alternating currents, peak and RMS value of alternating current/voltage, reactance and impedance, LCR series circuit, resonance, power in AC circuits, wattless current, AC generator and transformer.",
+              "key_concepts": ["AC current", "RMS value", "Reactance", "Impedance", "Resonance"],
+              "difficulty": "hard",
+              "formulas": ["I_rms = I₀/√2", "V_rms = V₀/√2", "X_L = ωL", "X_C = 1/(ωC)", "Z = √(R² + (X_L - X_C)²)"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T05",
+          "topic_name": "Electromagnetic Waves",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Electromagnetic spectrum and applications",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Electromagnetic Waves",
+              "content": "Displacement current, electromagnetic waves and their characteristics, transverse nature of electromagnetic waves, electromagnetic spectrum (radio waves, microwaves, infrared, visible, ultraviolet, X-rays, Gamma rays), applications of electromagnetic waves.",
+              "key_concepts": ["Displacement current", "EM waves", "EM spectrum", "Wave properties"],
+              "difficulty": "medium",
+              "formulas": ["c = 1/√(μ₀ε₀)", "E = cB", "Poynting vector S = (1/μ₀)E×B"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH04",
+      "chapter_name": "Optics and Modern Physics",
+      "weightage": 20,
+      "description": "Optical phenomena and modern physics concepts",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Optics",
+          "difficulty": "medium",
+          "weightage": 8,
+          "description": "Ray optics and wave optics",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Ray Optics",
+              "content": "Reflection of light, spherical mirrors, mirror formula. Refraction of light at plane and spherical surfaces, thin lens formula and lensmaker formula, total internal reflection and its applications, magnification, power of a lens, combination of thin lenses in contact, refraction of light through a prism, microscope and astronomical telescope (reflecting and refracting) and their magnifying powers.",
+              "key_concepts": ["Reflection", "Refraction", "Lenses", "Total internal reflection", "Optical instruments"],
+              "difficulty": "medium",
+              "formulas": ["1/f = 1/v + 1/u", "m = v/u", "P = 1/f", "sinC = 1/n"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Wave Optics",
+              "content": "Wave optics: wavefront and Huygens' Principle, laws of reflection and refraction using Huygens principle. Interference: Young's double-slit experiment and expression for fringe width, coherent sources and sustained interference of light. Diffraction due to a single slit, width of central maximum. Polarization: plane-polarized light, Brewster's law, uses of plane-polarized light and Polaroid.",
+              "key_concepts": ["Huygens' principle", "Interference", "Diffraction", "Polarization", "Coherent sources"],
+              "difficulty": "hard",
+              "formulas": ["β = λD/d", "I = I₀cos²(πdx/λL)", "θ = λ/a for minima", "Brewster's angle: tanθ_B = n"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Dual Nature of Matter and Radiation",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Photoelectric effect and matter waves",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Photoelectric Effect",
+              "content": "Dual nature of radiation, Photoelectric effect, Hertz and Lenard's observations, Einstein's photoelectric equation, particle nature of light. Matter waves: wave nature of particle, de-Broglier relation.",
+              "key_concepts": ["Photoelectric effect", "Photon", "Work function", "Matter waves", "de Broglie wavelength"],
+              "difficulty": "medium",
+              "formulas": ["E = hν", "KE_max = hν - φ₀", "λ = h/p = h/(mv)"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Atoms and Nuclei",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Atomic structure and nuclear physics",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Atomic Structure",
+              "content": "Alpha-particle scattering experiment, Rutherford's model of atom, Bohr model, energy levels, hydrogen spectrum.",
+              "key_concepts": ["Rutherford model", "Bohr model", "Energy levels", "Hydrogen spectrum", "Atomic transitions"],
+              "difficulty": "medium",
+              "formulas": ["E_n = -13.6/n² eV", "1/λ = R(1/n₁² - 1/n₂²)", "r_n = n²a₀"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Nuclear Physics",
+              "content": "Composition and size of nucleus, atomic masses, mass-energy relation, mass defect, binding energy per nucleon and its variation with mass number, nuclear fission and fusion.",
+              "key_concepts": ["Nucleus", "Mass defect", "Binding energy", "Nuclear fission", "Nuclear fusion"],
+              "difficulty": "medium",
+              "formulas": ["E = mc²", "Δm = (Zm_p + Nm_n) - M_nucleus", "BE = Δm × c²"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Electronic Devices",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Semiconductors and logic gates",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Semiconductors",
+              "content": "Semiconductors, semiconductor diode: I-V characteristics in forward and reverse bias, diode as a rectifier; I-V characteristics of LED, the photodiode, solar cell, Zener diode, Zener diode as a voltage regulator.",
+              "key_concepts": ["Semiconductors", "PN junction", "Diode characteristics", "LED", "Photodiode", "Zener diode"],
+              "difficulty": "medium",
+              "formulas": []
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Logic Gates",
+              "content": "Logic gates (OR, AND, NOT, NAND and NOR).",
+              "key_concepts": ["Logic gates", "Truth tables", "Boolean algebra", "Digital circuits"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH05",
+      "chapter_name": "Experimental Skills",
+      "weightage": 10,
+      "description": "Practical experiments and measurements",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Experimental Techniques",
+          "difficulty": "easy",
+          "weightage": 10,
+          "description": "Laboratory experiments and observations",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Measurement Experiments",
+              "content": "Familiarity with the basic approach and observations of the experiments and activities: Vernier calipers-its use to measure the internal and external diameter and depth of a vessel. Screw gauge-its use to determine the thickness/diameter of thin sheet/wire. Simple pendulum-dissipation of energy by plotting a graph between the square of amplitude and time. Metre scale-the mass of a given object by the principle of moments. Young's modulus of elasticity of the material of a metallic wire.",
+              "key_concepts": ["Vernier calipers", "Screw gauge", "Simple pendulum", "Moments", "Young's modulus"],
+              "difficulty": "easy",
+              "formulas": ["Y = FL/AΔL", "Principle of moments: F₁d₁ = F₂d₂"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Physics Experiments",
+              "content": "Surface tension of water by capillary rise and effect of detergents. Co-efficient of viscosity of a given viscous liquid by measuring the terminal velocity of a given spherical body. Speed of sound in air at room temperature using a resonance tube. Specific heat capacity of a given (i) solid and (ii) liquid by method of mixtures. The resistivity of the material of a given wire using a metre bridge. The resistance of a given wire using Ohm's law. Resistance and figure of merit of a galvanometer by half deflection method. The focal length of (i) Convex mirror (ii) Concave mirror and (iii) Convex lens, using the parallax method. The plot of the angle of deviation vs angle of incidence for a triangular prism. The refractive index of a glass slab using a travelling microscope. Characteristic curves of a p-n junction diode in forward and reverse bias. Characteristic curves of a Zener diode and finding reverse breakdown voltage. Identification of diode, LED, resistor, a capacitor from a mixed collection of such items.",
+              "key_concepts": ["Surface tension", "Viscosity", "Speed of sound", "Specific heat", "Resistance", "Focal length", "Refractive index", "Diode characteristics"],
+              "difficulty": "medium",
+              "formulas": ["γ = 2cosθ/(ρgr)", "v = 2r²g(ρ_s - ρ_l)/9η", "v = fλ", "Q = mcΔT"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

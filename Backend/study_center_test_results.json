@@ -1,0 +1,81 @@
+[
+  {
+    "test_name": "Get Available Topics",
+    "success": true,
+    "message": "Retrieved 62 topics",
+    "timestamp": "2025-12-02T03:41:41.596141",
+    "data": {
+      "topic_count": 62,
+      "first_topic": "T01"
+    }
+  },
+  {
+    "test_name": "Get Topic Details",
+    "success": true,
+    "message": "Retrieved details for topic: T01",
+    "timestamp": "2025-12-02T03:41:48.031623",
+    "data": {
+      "topic_id": "T01",
+      "has_progress": false
+    }
+  },
+  {
+    "test_name": "Get Learning Materials",
+    "success": false,
+    "message": "Notes: False, Mind Map: False, Teaching: False",
+    "timestamp": "2025-12-02T03:42:22.158271",
+    "data": {
+      "has_notes": false,
+      "has_mind_map": false,
+      "has_teaching_content": false
+    }
+  },
+  {
+    "test_name": "Learning Session Management",
+    "success": false,
+    "message": "can't subtract offset-naive and offset-aware datetimes",
+    "timestamp": "2025-12-02T03:42:29.296060",
+    "data": null
+  },
+  {
+    "test_name": "Get Progress Summary",
+    "success": true,
+    "message": "Progress summary retrieved with 0 subjects",
+    "timestamp": "2025-12-02T03:42:29.350610",
+    "data": {
+      "total_topics": 0,
+      "completed_topics": 0,
+      "overall_progress": 0.0,
+      "study_streak": 0
+    }
+  },
+  {
+    "test_name": "Get Learning Journey",
+    "success": true,
+    "message": "Learning journey retrieved with 62 topics",
+    "timestamp": "2025-12-02T03:42:35.591453",
+    "data": {
+      "total_topics": 62,
+      "completed_topics": 0,
+      "current_progress": 0.0,
+      "next_topic": "T01"
+    }
+  },
+  {
+    "test_name": "Get Parent Insights",
+    "success": false,
+    "message": "400 The query requires an index. You can create it here: https://console.firebase.google.com/v1/r/project/mentor-ai-dev-f5101/firestore/indexes?create_composite=Cl1wcm9qZWN0cy9tZW50b3ItYWktZGV2LWY1MTAxL2RhdGFiYXNlcy8oZGVmYXVsdCkvY29sbGVjdGlvbkdyb3Vwcy9sZWFybmluZ19zZXNzaW9ucy9pbmRleGVzL18QARoOCgpzdHVkZW50X2lkEAEaDgoKc3RhcnRfdGltZRACGgwKCF9fbmFtZV9fEAI",
+    "timestamp": "2025-12-02T03:42:35.687588",
+    "data": null
+  },
+  {
+    "test_name": "Get Session History",
+    "success": true,
+    "message": "Session history method not implemented - skipping test",
+    "timestamp": "2025-12-02T03:42:35.687707",
+    "data": {
+      "session_count": 0,
+      "latest_session_date": null
+    }
+  }
+]

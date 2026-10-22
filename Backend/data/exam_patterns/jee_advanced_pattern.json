@@ -1,0 +1,162 @@
+{
+  "exam_name": "JEE Advanced",
+  "exam_code": "JEE_ADVANCED",
+  "description": "Joint Entrance Examination Advanced - For admission to IITs and other premier institutes",
+  "total_questions": 200,
+  "duration_minutes": 180,
+  "max_marks": 720,
+  
+  "subjects": [
+    {
+      "name": "Physics",
+      "question_count": 66,
+      "weightage_percentage": 33,
+      "max_marks": 240,
+      "topics": [
+        "Mechanics",
+        "Thermal Physics",
+        "Electricity and Magnetism",
+        "Optics",
+        "Modern Physics",
+        "General Physics"
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "question_count": 67,
+      "weightage_percentage": 33,
+      "max_marks": 240,
+      "topics": [
+        "Physical Chemistry",
+        "Organic Chemistry",
+        "Inorganic Chemistry"
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "question_count": 67,
+      "weightage_percentage": 34,
+      "max_marks": 240,
+      "topics": [
+        "Algebra",
+        "Calculus",
+        "Coordinate Geometry",
+        "Trigonometry",
+        "Vectors and 3D Geometry",
+        "Probability and Statistics"
+      ]
+    }
+  ],
+  
+  "question_types": [
+    {
+      "type": "single_correct_mcq",
+      "count_per_subject": "40%",
+      "description": "Multiple choice questions with single correct answer",
+      "options_count": 4,
+      "answer_format": "A/B/C/D"
+    },
+    {
+      "type": "multiple_correct_mcq",
+      "count_per_subject": "30%",
+      "description": "Multiple choice questions with one or more correct answers",
+      "options_count": 4,
+      "answer_format": "One or more of A/B/C/D"
+    },
+    {
+      "type": "numerical",
+      "count_per_subject": "20%",
+      "description": "Numerical answer type questions",
+      "options_count": 0,
+      "answer_format": "Decimal (0.00 to 9999.99)"
+    },
+    {
+      "type": "matrix_match",
+      "count_per_subject": "10%",
+      "description": "Match the column type questions",
+      "options_count": 0,
+      "answer_format": "Multiple matches"
+    }
+  ],
+  
+  "marking_scheme": {
+    "single_correct_mcq": {
+      "correct_marks": 3,
+      "incorrect_marks": -1,
+      "unattempted_marks": 0,
+      "description": "Standard MCQ marking with negative marking"
+    },
+    "multiple_correct_mcq": {
+      "correct_marks": 4,
+      "incorrect_marks": -2,
+      "partial_marks": 1,
+      "unattempted_marks": 0,
+      "description": "Full marks if all correct answers selected, partial marks if some correct, negative if any wrong selected"
+    },
+    "numerical": {
+      "correct_marks": 4,
+      "incorrect_marks": 0,
+      "unattempted_marks": 0,
+      "description": "No negative marking for numerical questions"
+    },
+    "matrix_match": {
+      "correct_marks": 3,
+      "incorrect_marks": 0,
+      "partial_marks": 1,
+      "unattempted_marks": 0,
+      "description": "Partial marking based on correct matches"
+    }
+  },
+  
+  "difficulty_distribution": {
+    "easy": 20,
+    "medium": 50,
+    "hard": 30,
+    "description": "Percentage distribution across difficulty levels - More challenging than JEE Main"
+  },
+  
+  "sections": [
+    {
+      "name": "Section A - Physics",
+      "subject": "Physics",
+      "duration_minutes": 60,
+      "question_count": 66,
+      "instructions": "This section contains 66 Physics questions of various types: Single Correct MCQs (4 marks, -1 for incorrect), Multiple Correct MCQs (4 marks for all correct, partial marks possible, -2 for any incorrect), Numerical Answer Type (4 marks, no negative), and Matrix Match (3 marks with partial marking). Read each question carefully and mark your answers accordingly."
+    },
+    {
+      "name": "Section B - Chemistry",
+      "subject": "Chemistry",
+      "duration_minutes": 60,
+      "question_count": 67,
+      "instructions": "This section contains 67 Chemistry questions of various types: Single Correct MCQs (4 marks, -1 for incorrect), Multiple Correct MCQs (4 marks for all correct, partial marks possible, -2 for any incorrect), Numerical Answer Type (4 marks, no negative), and Matrix Match (3 marks with partial marking). Read each question carefully and mark your answers accordingly."
+    },
+    {
+      "name": "Section C - Mathematics",
+      "subject": "Mathematics",
+      "duration_minutes": 60,
+      "question_count": 67,
+      "instructions": "This section contains 67 Mathematics questions of various types: Single Correct MCQs (4 marks, -1 for incorrect), Multiple Correct MCQs (4 marks for all correct, partial marks possible, -2 for any incorrect), Numerical Answer Type (4 marks, no negative), and Matrix Match (3 marks with partial marking). Read each question carefully and mark your answers accordingly."
+    }
+  ],
+  
+  "general_instructions": [
+    "Total duration of the examination is 180 minutes (3 hours)",
+    "The test consists of 200 questions divided into three sections",
+    "All questions are compulsory",
+    "Each section must be attempted in the given order",
+    "Use of calculator is not permitted",
+    "For Multiple Correct MCQs, select all correct options to get full marks",
+    "Partial marking is applicable for Multiple Correct and Matrix Match questions",
+    "Read instructions for each question type carefully",
+    "Negative marking is applicable for Single Correct and Multiple Correct MCQs only"
+  ],
+  
+  "metadata": {
+    "version": "2024",
+    "last_updated": "2024-01-15",
+    "conducting_body": "IIT (Rotating among IITs)",
+    "exam_mode": "Computer Based Test (CBT)",
+    "language_options": ["English", "Hindi"],
+    "eligibility": "Top 2.5 lakh JEE Main qualifiers"
+  }
+}

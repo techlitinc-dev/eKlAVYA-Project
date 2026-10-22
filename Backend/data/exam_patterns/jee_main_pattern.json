@@ -1,0 +1,132 @@
+{
+  "exam_name": "JEE Main",
+  "exam_code": "JEE_MAIN",
+  "description": "Joint Entrance Examination Main - National level engineering entrance exam",
+  "total_questions": 200,
+  "duration_minutes": 180,
+  "max_marks": 800,
+  
+  "subjects": [
+    {
+      "name": "Physics",
+      "question_count": 60,
+      "weightage_percentage": 30,
+      "max_marks": 240,
+      "topics": [
+        "Mechanics",
+        "Thermodynamics",
+        "Electromagnetism",
+        "Optics",
+        "Modern Physics",
+        "Waves and Sound"
+      ]
+    },
+    {
+      "name": "Chemistry",
+      "question_count": 60,
+      "weightage_percentage": 30,
+      "max_marks": 240,
+      "topics": [
+        "Physical Chemistry",
+        "Organic Chemistry",
+        "Inorganic Chemistry"
+      ]
+    },
+    {
+      "name": "Mathematics",
+      "question_count": 80,
+      "weightage_percentage": 40,
+      "max_marks": 320,
+      "topics": [
+        "Algebra",
+        "Calculus",
+        "Coordinate Geometry",
+        "Trigonometry",
+        "Vectors and 3D Geometry",
+        "Probability and Statistics"
+      ]
+    }
+  ],
+  
+  "question_types": [
+    {
+      "type": "single_correct_mcq",
+      "count_per_subject": "70%",
+      "description": "Multiple choice questions with single correct answer",
+      "options_count": 4,
+      "answer_format": "A/B/C/D"
+    },
+    {
+      "type": "numerical",
+      "count_per_subject": "30%",
+      "description": "Numerical answer type questions (integer value 0-9999)",
+      "options_count": 0,
+      "answer_format": "Integer (0-9999)"
+    }
+  ],
+  
+  "marking_scheme": {
+    "single_correct_mcq": {
+      "correct_marks": 4,
+      "incorrect_marks": -1,
+      "unattempted_marks": 0,
+      "description": "Standard MCQ marking with negative marking"
+    },
+    "numerical": {
+      "correct_marks": 4,
+      "incorrect_marks": 0,
+      "unattempted_marks": 0,
+      "description": "No negative marking for numerical questions"
+    }
+  },
+  
+  "difficulty_distribution": {
+    "easy": 30,
+    "medium": 50,
+    "hard": 20,
+    "description": "Percentage distribution across difficulty levels"
+  },
+  
+  "sections": [
+    {
+      "name": "Section A - Physics",
+      "subject": "Physics",
+      "duration_minutes": 60,
+      "question_count": 60,
+      "instructions": "This section contains 60 Physics questions. Approximately 42 questions are Multiple Choice Questions (MCQs) with 4 options each, having single correct answer. Each correct answer carries 4 marks and each incorrect answer carries -1 mark. Approximately 18 questions are Numerical Answer Type questions where the answer is an integer value (0-9999). Each correct answer carries 4 marks with no negative marking."
+    },
+    {
+      "name": "Section B - Chemistry",
+      "subject": "Chemistry",
+      "duration_minutes": 60,
+      "question_count": 60,
+      "instructions": "This section contains 60 Chemistry questions. Approximately 42 questions are Multiple Choice Questions (MCQs) with 4 options each, having single correct answer. Each correct answer carries 4 marks and each incorrect answer carries -1 mark. Approximately 18 questions are Numerical Answer Type questions where the answer is an integer value (0-9999). Each correct answer carries 4 marks with no negative marking."
+    },
+    {
+      "name": "Section C - Mathematics",
+      "subject": "Mathematics",
+      "duration_minutes": 60,
+      "question_count": 80,
+      "instructions": "This section contains 80 Mathematics questions. Approximately 56 questions are Multiple Choice Questions (MCQs) with 4 options each, having single correct answer. Each correct answer carries 4 marks and each incorrect answer carries -1 mark. Approximately 24 questions are Numerical Answer Type questions where the answer is an integer value (0-9999). Each correct answer carries 4 marks with no negative marking."
+    }
+  ],
+  
+  "general_instructions": [
+    "Total duration of the examination is 180 minutes (3 hours)",
+    "The test consists of 200 questions divided into three sections",
+    "All questions are compulsory",
+    "Each section must be attempted in the given order",
+    "Use of calculator is not permitted",
+    "Rough work should be done on the space provided in the test booklet",
+    "There is no overall choice. However, internal choices are provided in some questions",
+    "Candidates are advised to attempt all questions"
+  ],
+  
+  "metadata": {
+    "version": "2024",
+    "last_updated": "2024-01-15",
+    "conducting_body": "National Testing Agency (NTA)",
+    "exam_mode": "Computer Based Test (CBT)",
+    "language_options": ["English", "Hindi", "Gujarati", "Marathi", "Tamil", "Telugu", "Bengali", "Kannada", "Assamese", "Punjabi", "Malayalam", "Urdu", "Odia"]
+  }
+}

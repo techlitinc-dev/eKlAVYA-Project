@@ -1,0 +1,396 @@
+{
+  "exam": "JEE_MAIN",
+  "subject": "Chemistry",
+  "version": "2024",
+  "total_chapters": 3,
+  "chapters": [
+    {
+      "chapter_id": "CH01",
+      "chapter_name": "Physical Chemistry",
+      "weightage": 35,
+      "description": "Physical chemistry concepts and principles",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Some Basic Concepts in Chemistry",
+          "difficulty": "easy",
+          "weightage": 3,
+          "description": "Fundamental concepts of chemistry",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Basic Concepts",
+              "content": "Matter and its nature, Dalton's atomic theory, Concept of atom, molecule, element and compound, Laws of chemical combination, Atomic and molecular masses, mole concept, molar mass, percentage composition, empirical and molecular formulae, Chemical equations and stoichiometry.",
+              "key_concepts": ["Dalton's theory", "Mole concept", "Stoichiometry", "Chemical equations", "Empirical formula"],
+              "difficulty": "easy",
+              "formulas": ["Number of moles = mass/molar mass", "% composition = (mass of element/total mass) × 100"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Atomic Structure",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Structure of atoms and quantum mechanics",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Quantum Mechanics",
+              "content": "Nature of electromagnetic radiation, photoelectric effect, spectrum of the hydrogen atom, Bohr model of a hydrogen atom-its postulates, derivation of the relations for the energy of the electron and radii of the different orbits, limitations of Bohr's model, dual nature of matter, de Broglie's relationship, Heisenberg uncertainty principle, elementary ideas of quantum mechanics, the quantum mechanical model of the atom and its important features, concept of atomic orbitals as one-electron wave functions, variation of ψ and ψ² with r for 1s and 2s orbitals, various quantum numbers (principal, angular momentum and magnetic quantum numbers) and their significance, shapes of s, p and d orbitals, electron spin and spin quantum number, rules for filling electrons in orbitals – Aufbau principle, Pauli's exclusion principle and Hund's rule, electronic configuration of elements and extra stability of half-filled and completely filled orbitals.",
+              "key_concepts": ["Bohr model", "Quantum numbers", "Orbitals", "Electron configuration", "Aufbau principle", "Pauli exclusion", "Hund's rule"],
+              "difficulty": "medium",
+              "formulas": ["E = -2.18 × 10^-18 × Z²/n² J", "λ = h/p", "Δx × Δp ≥ h/4π"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Chemical Bonding and Molecular Structure",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Chemical bonds and molecular geometry",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Chemical Bonding",
+              "content": "Kossel-Lewis approach to chemical bond formation, the concept of ionic and covalent bonds. Ionic Bonding: Formation of ionic bonds, factors affecting the formation of ionic bonds; calculation of lattice enthalpy. Covalent Bonding: Concept of electronegativity, Fajan's rule, dipole moment, Valence Shell Electron Pair Repulsion (VSEPR) theory and shapes of simple molecules. Quantum mechanical approach to covalent bonding: Valence bond theory-its important features, the concept of hybridization involving s, p and d orbitals, resonance. Molecular Orbital Theory-Its important features, LCAOs, types of molecular orbitals (bonding, antibonding), sigma and pi-bonds, molecular orbital electronic configurations of homonuclear diatomic molecules, the concept of bond order, bond length and bond energy. Elementary idea of metallic bonding, hydrogen bonding and its applications.",
+              "key_concepts": ["Ionic bonding", "Covalent bonding", "VSEPR theory", "Hybridization", "Molecular orbital theory", "Hydrogen bonding"],
+              "difficulty": "medium",
+              "formulas": ["Lattice energy ∝ (q₁q₂)/r", "Bond order = (Nb - Na)/2"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Chemical Thermodynamics",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Thermodynamic principles and applications",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Thermodynamic Laws",
+              "content": "Fundamentals of thermodynamics: System and surroundings, extensive and intensive properties, state functions, entropy, types of processes. The first law of thermodynamics-Concept of work, heat, internal energy and enthalpy, heat capacity, molar heat capacity, Hess's law of constant heat summation, Enthalpies of bond dissociation, combustion, formation, atomization, sublimation, phase transition, hydration, ionization and solution. The second law of thermodynamics-Spontaneity of processes, ΔS of the universe and ΔG of the system as criteria for spontaneity. ΔG° (Standard Gibbs energy change) and equilibrium constant.",
+              "key_concepts": ["First law", "Second law", "Enthalpy", "Entropy", "Gibbs free energy", "Hess's law"],
+              "difficulty": "medium",
+              "formulas": ["ΔU = q + w", "ΔH = ΔU + Δn_gRT", "ΔS_universe = ΔS_system + ΔS_surroundings", "ΔG = ΔH - TΔS"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T05",
+          "topic_name": "Solutions",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Solutions and their properties",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Solution Properties",
+              "content": "Different methods for expressing the concentration of solution-molality, molarity, mole fraction, percentage (by volume and mass both), the vapour pressure of solutions and Raoult's Law-Ideal and non-ideal solutions, vapour pressure-composition, plots for ideal and non-ideal solutions, Colligative properties of dilute solutions-a relative lowering of vapour pressure, depression of freezing point, the elevation of boiling point and osmotic pressure, determination of molecular mass using colligative properties, abnormal value of molar mass, van't Hoff factor and its significance.",
+              "key_concepts": ["Concentration units", "Raoult's law", "Colligative properties", "Van't Hoff factor"],
+              "difficulty": "medium",
+              "formulas": ["Molality = moles of solute/kg of solvent", "Molarity = moles of solute/liter of solution", "ΔT_f = K_f × m", "ΔT_b = K_b × m", "π = iMRT"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T06",
+          "topic_name": "Equilibrium",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Chemical and ionic equilibrium",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Chemical Equilibrium",
+              "content": "Meaning of equilibrium is the concept of dynamic equilibrium. Equilibrium involving physical processes: Solid-liquid, liquid-gas, gas-gas and solid-gaseous equilibria, Henry's law. General characteristics of equilibrium involving physical processes. Equilibrium involving chemical processes: Law of chemical equilibrium, equilibrium constants (K_p and K_c) and their significance, the significance of ΔG and ΔG° in chemical equilibrium, factors affecting equilibrium concentration, pressure, temperature, the effect of catalyst, Le Chatelier's principle.",
+              "key_concepts": ["Dynamic equilibrium", "Equilibrium constant", "Le Chatelier's principle", "Henry's law"],
+              "difficulty": "hard",
+              "formulas": ["K_p = K_c(RT)^Δn", "K_eq = [products]^coefficients/[reactants]^coefficients"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Ionic Equilibrium",
+              "content": "Ionic equilibrium: Weak and strong electrolytes, ionization of electrolytes, various concepts of acids and bases (Arrhenius, Bronsted-Lowry and Lewis) and their ionization, acid-base equilibria (including multistage ionization) and ionization constants, ionization of water, pH scale, common ion effect, hydrolysis of salts and pH of their solutions, the solubility of sparingly soluble salts, solubility products and buffers solutions.",
+              "key_concepts": ["Acid-base theories", "pH scale", "Common ion effect", "Solubility product", "Buffer solutions"],
+              "difficulty": "hard",
+              "formulas": ["pH = -log[H⁺]", "pOH = -log[OH⁻]", "pH + pOH = 14", "K_sp = [A⁺][B⁻]"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T07",
+          "topic_name": "Redox Reactions and Electrochemistry",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Redox reactions and electrochemical cells",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Redox Reactions",
+              "content": "Electronic concepts of oxidation and reduction, redox reactions, oxidation number, rules for assigning oxidation number and balancing of redox reactions.",
+              "key_concepts": ["Oxidation", "Reduction", "Oxidation number", "Balancing redox reactions"],
+              "difficulty": "medium",
+              "formulas": ["Oxidation number rules"]
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Electrochemistry",
+              "content": "Electrolytic and metallic conduction, conductance in electrolytic solutions, molar conductivities and their variation with concentration, Kohlrausch's law and its applications. Electrochemical cells-Electrolytic and Galvanic cells, different types of electrodes, electrode potentials including standard electrode potential, half-cell and cell reactions, emf of a Galvanic cell and its measurement, Nernst equation and its applications, relationship between cell potential and Gibbs' energy change, dry cell and lead accumulator, fuel cells.",
+              "key_concepts": ["Conductivity", "Electrochemical cells", "Electrode potential", "Nernst equation", "Gibbs energy"],
+              "difficulty": "hard",
+              "formulas": ["Λ_m = κ/c", "Λ_m = Λ_m° - K√c", "E_cell = E°cell - (RT/nF)lnQ", "ΔG = -nFE_cell"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T08",
+          "topic_name": "Chemical Kinetics",
+          "difficulty": "hard",
+          "weightage": 3,
+          "description": "Reaction rates and mechanisms",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Reaction Kinetics",
+              "content": "Rate of a chemical reaction, factors affecting the rate of reactions: concentration, temperature, pressure and catalyst, elementary and complex reactions, order and molecularity of reactions, rate law, rate constant and its units, differential and integral forms of zero and first-order reactions, their characteristics and half-lives, the effect of temperature on the rate of reactions, Arrhenius theory, activation energy and its calculation, collision theory of bi-molecular gaseous reactions (no derivation).",
+              "key_concepts": ["Reaction rate", "Rate law", "Order of reaction", "Half-life", "Activation energy", "Arrhenius equation"],
+              "difficulty": "hard",
+              "formulas": ["Rate = k[A]^x[B]^y", "t_1/2 = 0.693/k (first order)", "k = Ae^(-Ea/RT)"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH02",
+      "chapter_name": "Inorganic Chemistry",
+      "weightage": 30,
+      "description": "Inorganic chemistry elements and compounds",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Classification of Elements and Periodicity in Properties",
+          "difficulty": "easy",
+          "weightage": 3,
+          "description": "Periodic table and periodic trends",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Periodic Classification",
+              "content": "Modern periodic law and present form of the periodic table, s, p.d and f block elements, periodic trends in properties of elements atomic and ionic radii, ionization enthalpy, electron gain enthalpy, valence, oxidation states and chemical reactivity.",
+              "key_concepts": ["Periodic law", "Periodic trends", "Atomic radius", "Ionization energy", "Electron affinity"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "p-Block Elements",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Elements of groups 13-18",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "p-Block Elements",
+              "content": "Group-13 to Group-18 Elements. General Introduction: Electronic configuration and general trends in physical and chemical properties of elements across the periods and down the groups, unique behaviour of the first element in each group.",
+              "key_concepts": ["p-block configuration", "Group properties", "Trends", "Anomalous behavior"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "d-and f-Block Elements",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Transition and inner transition elements",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Transition Elements",
+              "content": "Transition Elements-General introduction, electronic configuration, occurrence and characteristics, general trends in properties of the first-row transition elements-physical properties, ionization enthalpy, oxidation states, atomic radii, colour, catalytic behaviour, magnetic properties, complex formation, interstitial compounds, alloy formation, preparation, properties and uses of K₂Cr₂O₇ and KMnO₄.",
+              "key_concepts": ["Transition elements", "Electronic configuration", "Oxidation states", "Complex formation", "Catalytic properties"],
+              "difficulty": "medium",
+              "formulas": []
+            },
+            {
+              "subtopic_id": "ST02",
+              "subtopic_name": "Inner Transition Elements",
+              "content": "Inner Transition Elements. Lanthanoids-Electronic configuration, oxidation states and Lanthanoid contraction. Actinoids-Electronic configuration and oxidation states.",
+              "key_concepts": ["Lanthanoids", "Actinoids", "Lanthanoid contraction", "f-block elements"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Coordination Compounds",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Complex compounds and bonding",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Coordination Chemistry",
+              "content": "Introduction to coordination compounds. Werner's theory, ligands, coordination number, denticity, chelation, IUPAC nomenclature of mononuclear co-ordination compounds, isomerism, Bonding: Valence bond approach and basic ideas of Crystal field theory, colour and magnetic properties, importance of coordination compounds (in qualitative analysis, extraction of metals and in biological systems).",
+              "key_concepts": ["Werner's theory", "Ligands", "Coordination number", "Isomerism", "Crystal field theory"],
+              "difficulty": "hard",
+              "formulas": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH03",
+      "chapter_name": "Organic Chemistry",
+      "weightage": 35,
+      "description": "Organic compounds and reactions",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Purification and Characterisation of Organic Compounds",
+          "difficulty": "easy",
+          "weightage": 3,
+          "description": "Methods of purification and analysis",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Purification Methods",
+              "content": "Purification-Crystallization, sublimation, distillation, differential extraction and chromatography-principles and their applications. Qualitative analysis-Detection of nitrogen, sulphur, phosphorus and halogens. Quantitative analysis (basic principles only)-Estimation of carbon, hydrogen, nitrogen, halogens, sulphur and phosphorus. Calculations of empirical formulae and molecular formulae, numerical problems in organic quantitative analysis.",
+              "key_concepts": ["Crystallization", "Distillation", "Chromatography", "Qualitative analysis", "Quantitative analysis"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Some Basic Principles of Organic Chemistry",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Fundamental organic chemistry concepts",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Basic Principles",
+              "content": "Tetravalency of carbon, shapes of simple molecules-hybridization (s and p): classification of organic compounds based on functional groups and those containing halogens, oxygen, nitrogen and sulphur, homologous series: Isomerism-structural and stereoisomerism. Nomenclature (Trivial and IUPAC). Covalent bond fission-Homolytic and heterolytic, free radicals, carbocations and carbanions, stability of carbocations and free radicals, electrophiles and nucleophiles. Electronic displacement in a covalent bond -Inductive effect, electromeric effect, resonance and hyperconjugation. Common types of organic reactions-Substitution, addition, elimination and rearrangement.",
+              "key_concepts": ["Hybridization", "Functional groups", "Isomerism", "Nomenclature", "Reaction mechanisms"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Hydrocarbons",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Alkanes, alkenes, alkynes, and aromatic compounds",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Hydrocarbon Types",
+              "content": "Classification, isomerism, IUPAC nomenclature, general methods of preparation, properties and reactions. Alkanes-Conformations: Sawhorse and Newman projections (of ethane), mechanism of halogenation of alkanes. Alkenes-Geometrical isomerism, mechanism of electrophilic addition, addition of hydrogen, halogens, water, hydrogen halides (Markownikoffs and peroxide effect), Ozonolysis and polymerization. Alkynes-Acidic character, addition of hydrogen, halogens, water and hydrogen halides, polymerization. Aromatic hydrocarbons-Nomenclature, benzene-structure and aromaticity, mechanism of electrophilic substitution, halogenation, nitration. Friedel-Craft's alkylation and acylation, directive influence of the functional group in mono-substituted benzene.",
+              "key_concepts": ["Alkanes", "Alkenes", "Alkynes", "Aromatic compounds", "Conformations", "Reaction mechanisms"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Organic Compounds Containing Halogens",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Haloalkanes and haloarenes",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Halo Compounds",
+              "content": "General methods of preparation, properties and reactions, nature of C-X bond, mechanisms of substitution reactions. Uses, environmental effects of chloroform, iodoform, freons and DDT.",
+              "key_concepts": ["Haloalkanes", "Haloarenes", "Substitution reactions", "Environmental impact"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T05",
+          "topic_name": "Organic Compounds Containing Oxygen",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Alcohols, phenols, ethers, carbonyl compounds, and carboxylic acids",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Oxygen Containing Compounds",
+              "content": "General methods of preparation, properties, reactions and uses. ALCOHOLS, PHENOLS AND ETHERS. Alcohols: Identification of primary, secondary and tertiary alcohols, mechanism of dehydration. Phenols: Acidic nature, electrophilic substitution reactions, halogenation, nitration and sulphonation, Reimer-Tiemann reaction. Ethers: Structure. Aldehyde and Ketones: Nature of carbonyl group, nucleophilic addition to >C=O group, relative reactivities of aldehydes and ketones, important reactions such as-Nucleophilic addition reactions (addition of HCN, NH₃ and its derivatives), Grignard reagent, oxidation, reduction (Wolf Kishner and Clemmensen), the acidity of α-hydrogen. Aldol condensation, Cannizzaro reaction, Haloform reaction, chemical tests to distinguish between aldehydes and ketones. Carboxylic Acids: Acidic strength and factors affecting it.",
+              "key_concepts": ["Alcohols", "Phenols", "Ethers", "Aldehydes", "Ketones", "Carboxylic acids"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T06",
+          "topic_name": "Organic Compounds Containing Nitrogen",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Amines and related compounds",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Nitrogen Compounds",
+              "content": "General methods of preparation, properties, reactions and uses. Amines: Nomenclature, classification, structure, basic character and identification of primary, secondary and tertiary amines and their basic character. Diazonium Salts: Importance in synthetic organic chemistry.",
+              "key_concepts": ["Amines", "Diazonium salts", "Basic character", "Synthetic applications"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T07",
+          "topic_name": "Biomolecules",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Carbohydrates, proteins, vitamins, and nucleic acids",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Biological Molecules",
+              "content": "General introduction and importance of biomolecules. CARBOHYDRATES-Classification, aldoses and ketoses, monosaccharides (glucose and fructose) and constituent monosaccharides of oligosaccharides (sucrose, lactose and maltose). PROTEINS-Elementary idea of α-amino acids, peptide bond, polypeptides, proteins: primary, secondary, tertiary and quaternary structure (qualitative idea only), denaturation of proteins, enzymes. VITAMINS-Classification and functions. NUCLEIC ACIDS-Chemical constitution of DNA and RNA, biological functions of nucleic acids. Hormones (General introduction).",
+              "key_concepts": ["Carbohydrates", "Proteins", "Vitamins", "Nucleic acids", "Hormones"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T08",
+          "topic_name": "Principles Related to Practical Chemistry",
+          "difficulty": "easy",
+          "weightage": 3,
+          "description": "Laboratory techniques and qualitative analysis",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Practical Chemistry",
+              "content": "Detection of extra elements (Nitrogen, sulphur, halogens) in organic compounds, detection of the following functional groups, hydroxyl (alcoholic and phenolic), carbonyl (aldehyde and ketones) carboxyl and amino groups in organic compounds. The chemistry involved in the preparation of the following: Inorganic compounds, Mohr's salt, potash alum. Organic compounds: Acetanilide, p-nitroacetanilide, aniline yellow, iodoform. The chemistry involved in the titrimetric exercises-acids, bases and the use of indicators, oxalic-acid vs KMnO₄, Mohr's salt vs KMnO₄. Chemical principles involved in the qualitative salt analysis: Cations-Pb²⁺, Cu²⁺, Al³⁺, Fe³⁺, Zn²⁺, Ni²⁺, Ca²⁺, Ba²⁺, Mg²⁺, NH₄⁺. Anions-CO₃²⁻, S²⁻, SO₄²⁻, NO₃⁻, NO₂⁻, Cl⁻, Br⁻, I⁻ (Insoluble salts excluded). Chemical principles involved in the following experiments: 1. Enthalpy of solution of CuSO₄. 2. Enthalpy of neutralization of strong acid and strong base. 3. Preparation of lyophilic and lyophobic sols. 4. Kinetic study of the reaction of iodide ions with hydrogen peroxide at room temperature.",
+              "key_concepts": ["Qualitative analysis", "Titration", "Functional group detection", "Salt analysis", "Enthalpy measurements"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

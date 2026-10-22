@@ -1,0 +1,44 @@
+{
+  "exam_name": "NEET",
+  "total_questions": 180,
+  "subjects": [
+    {
+      "name": "Physics",
+      "question_count": 45,
+      "weightage": 25.0
+    },
+    {
+      "name": "Chemistry",
+      "question_count": 45,
+      "weightage": 25.0
+    },
+    {
+      "name": "Botany",
+      "question_count": 45,
+      "weightage": 25.0
+    },
+    {
+      "name": "Zoology",
+      "question_count": 45,
+      "weightage": 25.0
+    }
+  ],
+  "question_types": [
+    {
+      "type": "MCQ",
+      "count_per_subject": 45,
+      "marks": 4.0
+    }
+  ],
+  "marking_scheme": {
+    "correct_marks": 4.0,
+    "incorrect_marks": -1.0,
+    "unattempted_marks": 0.0
+  },
+  "duration_minutes": 180,
+  "difficulty_distribution": {
+    "easy": 35.0,
+    "medium": 45.0,
+    "hard": 20.0
+  }
+}

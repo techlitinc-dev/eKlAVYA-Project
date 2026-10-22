@@ -1,0 +1,491 @@
+{
+  "exam": "JEE_ADVANCED",
+  "subject": "Chemistry",
+  "version": "2025",
+  "total_chapters": 3,
+  "chapters": [
+    {
+      "chapter_id": "CH01",
+      "chapter_name": "Physical Chemistry",
+      "weightage": 35,
+      "description": "Physical chemistry concepts and principles",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "General Topics",
+          "difficulty": "easy",
+          "weightage": 3,
+          "description": "Basic concepts in chemistry",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Basic Concepts",
+              "content": "Concept of atoms and molecules; Dalton's atomic theory; Mole concept; Chemical formulae; Balanced chemical equations; Calculations (based on mole concept and stoichiometry) involving common oxidation-reduction, neutralisation, and displacement reactions; Concentration in terms of mole fraction, molarity, molality and normality.",
+              "key_concepts": ["Atomic theory", "Mole concept", "Stoichiometry", "Chemical equations", "Concentration units"],
+              "difficulty": "easy",
+              "formulas": ["Moles = mass/molar mass", "Molarity = moles/volume", "Molality = moles/kg solvent"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "States of Matter",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Gases and liquids",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Gases and Liquids",
+              "content": "Gas laws and ideal gas equation, absolute scale of temperature; Deviation from ideality, van der Waals equation; Kinetic theory of gases, average, root mean square and most probable velocities and their relation with temperature; Law of partial pressures; Diffusion of gases. Intermolecular interactions: types, distance dependence, and their effect on properties; Liquids: vapour pressure, surface tension, viscosity.",
+              "key_concepts": ["Gas laws", "Ideal gas equation", "van der Waals equation", "Kinetic theory", "Intermolecular forces", "Liquid properties"],
+              "difficulty": "medium",
+              "formulas": ["PV = nRT", "(P + a/V²)(V - b) = RT", "v_rms = √(3kT/m)", "p₁ + p₂ + ... = P_total"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Atomic Structure",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Atomic structure and quantum mechanics",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Quantum Mechanics",
+              "content": "Bohr model, spectrum of hydrogen atom; Wave-particle duality, de Broglie hypothesis; Uncertainty principle; Qualitative quantum mechanical picture of hydrogen atom: Energies, quantum numbers, wave function and probability density (plots only), shapes of s, p and d orbitals; Aufbau principle; Pauli's exclusion principle and Hund's rule.",
+              "key_concepts": ["Bohr model", "Quantum numbers", "Orbitals", "Uncertainty principle", "Electron configuration"],
+              "difficulty": "medium",
+              "formulas": ["E_n = -13.6/n² eV", "λ = h/p", "Δx·Δp ≥ h/4π"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Chemical Bonding",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Chemical bonding and molecular structure",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Molecular Structure",
+              "content": "Orbital overlap and covalent bond; Hybridisation involving s, p and d orbitals only; Molecular orbital energy diagrams for homonuclear diatomic species (up to Ne²); Hydrogen bond; Polarity in molecules, dipole moment; VSEPR model and shapes of molecules (linear, angular, triangular, square planar, pyramidal, square pyramidal, trigonal bipyramidal, tetrahedral and octahedral).",
+              "key_concepts": ["Covalent bonding", "Hybridisation", "Molecular orbital theory", "VSEPR theory", "Molecular geometry"],
+              "difficulty": "medium",
+              "formulas": ["Bond order = (Nb - Na)/2", "Dipole moment μ = q×d"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T05",
+          "topic_name": "Chemical Thermodynamics",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Thermodynamic principles",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Thermodynamics",
+              "content": "Intensive and extensive properties, state functions, First law of thermodynamics; Internal energy, work (pressure-volume only) and heat; Enthalpy, heat capacity, standard state, Hess's law; Enthalpy of reaction, fusion and vapourization, and lattice enthalpy; Second law of thermodynamics; Entropy; Gibbs energy; Criteria of equilibrium and spontaneity.",
+              "key_concepts": ["First law", "Second law", "Enthalpy", "Entropy", "Gibbs energy", "Hess's law"],
+              "difficulty": "medium",
+              "formulas": ["ΔU = q + w", "ΔH = ΔU + Δn_gRT", "ΔS = q_rev/T", "ΔG = ΔH - TΔS"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T06",
+          "topic_name": "Chemical and Ionic Equilibrium",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Chemical equilibrium and ionic equilibrium",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Equilibrium",
+              "content": "Law of mass action; Significance of ΔG and ΔG° in chemical equilibrium; Equilibrium constant (K_p and K_c) and reaction quotient, Le Chatelier's principle (effect of concentration, temperature and pressure); Solubility product and its applications, common ion effect, pH and buffer solutions; Acids and bases (Brønsted and Lewis concepts); Hydrolysis of salts.",
+              "key_concepts": ["Law of mass action", "Equilibrium constant", "Le Chatelier's principle", "Solubility product", "pH", "Buffers"],
+              "difficulty": "hard",
+              "formulas": ["K_eq = [products]^coeff/[reactants]^coeff", "K_p = K_c(RT)^Δn", "pH = -log[H⁺]", "K_sp = [A⁺][B⁻]"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T07",
+          "topic_name": "Electrochemistry",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Electrochemical cells and conductance",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Electrochemical Cells",
+              "content": "Electrochemical cells and cell reactions; Standard electrode potentials; Electrochemical work, Nernst equation; Electrochemical series, emf of galvanic cells; Faraday's laws of electrolysis; Electrolytic conductance, specific, equivalent and molar conductivity, Kohlrausch's law; Batteries: Primary and Secondary, fuel cells; Corrosion.",
+              "key_concepts": ["Electrochemical cells", "Electrode potentials", "Nernst equation", "Conductivity", "Batteries"],
+              "difficulty": "hard",
+              "formulas": ["E_cell = E°_cell - (RT/nF)lnQ", "Λ_m = Λ_m° - K√c", "m = Q/nF"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T08",
+          "topic_name": "Chemical Kinetics",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Reaction rates and mechanisms",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Reaction Kinetics",
+              "content": "Rates of chemical reactions; Order and molecularity of reactions; Rate law, rate constant, half-life; Differential and integrated rate expressions for zero and first order reactions; Temperature dependence of rate constant (Arrhenius equation and activation energy); Catalysis: Homogeneous and heterogeneous, activity and selectivity of solid catalysts, enzyme catalysis and its mechanism.",
+              "key_concepts": ["Reaction rate", "Rate law", "Order of reaction", "Half-life", "Activation energy", "Catalysis"],
+              "difficulty": "hard",
+              "formulas": ["Rate = k[A]^x[B]^y", "t_1/2 = 0.693/k", "k = Ae^(-Ea/RT)"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T09",
+          "topic_name": "Solid State",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Solid state chemistry",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Solid State",
+              "content": "Classification of solids, crystalline state, seven crystal systems (cell parameters a, b, c, α, β, γ), close packed structure of solids (cubic and hexagonal), packing in fcc, bcc and hcp lattices; Nearest neighbours, ionic radii and radius ratio, point defects.",
+              "key_concepts": ["Crystal systems", "Lattice structures", "Packing efficiency", "Ionic radii", "Crystal defects"],
+              "difficulty": "medium",
+              "formulas": ["Packing efficiency = (volume occupied/total volume) × 100%"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T10",
+          "topic_name": "Solutions",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Solutions and their properties",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Solution Properties",
+              "content": "Henry's law; Raoult's law; Ideal solutions; Colligative properties: lowering of vapour pressure, elevation of boiling point, depression of freezing point, and osmotic pressure; van't Hoff factor.",
+              "key_concepts": ["Henry's law", "Raoult's law", "Colligative properties", "van't Hoff factor"],
+              "difficulty": "medium",
+              "formulas": ["p = kH·x", "P_total = x_A·P°_A + x_B·P°_B", "ΔT_b = K_b·m·i", "π = iMRT"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T11",
+          "topic_name": "Surface Chemistry",
+          "difficulty": "medium",
+          "weightage": 2,
+          "description": "Surface phenomena and colloids",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Surface Chemistry",
+              "content": "Elementary concepts of adsorption: Physisorption and Chemisorption, Freundlich adsorption isotherm; Colloids: types, methods of preparation and general properties; Elementary ideas of emulsions, surfactants and micelles (only definitions and examples).",
+              "key_concepts": ["Adsorption", "Colloids", "Emulsions", "Surfactants", "Micelles"],
+              "difficulty": "medium",
+              "formulas": ["x/m = k·p^(1/n) (Freundlich isotherm)"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH02",
+      "chapter_name": "Inorganic Chemistry",
+      "weightage": 30,
+      "description": "Inorganic elements and compounds",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Classification of Elements",
+          "difficulty": "easy",
+          "weightage": 3,
+          "description": "Periodic table and periodic trends",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Periodic Properties",
+              "content": "Modern periodic law and the present form of periodic table; electronic configuration of elements; periodic trends in atomic radius, ionic radius, ionization enthalpy, electron gain enthalpy, valence, oxidation states, electronegativity, and chemical reactivity.",
+              "key_concepts": ["Periodic law", "Periodic trends", "Atomic radius", "Ionization energy", "Electron affinity"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Hydrogen and s-Block Elements",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Hydrogen and alkali/alkaline earth metals",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Hydrogen and s-Block",
+              "content": "Position of hydrogen in periodic table, occurrence, isotopes, preparation, properties and uses of hydrogen; hydrides – ionic, covalent and interstitial; physical and chemical properties of water, heavy water; hydrogen peroxide- preparation, reactions, use and structure; hydrogen as a fuel. s-Block Elements: Alkali and alkaline earth metals-reactivity towards air, water, dihydrogen, halogens, acids; their reducing nature including solutions in liquid ammonia; uses of these elements; general characteristics of their oxides, hydroxides, halides, salts of oxoacids; anomalous behaviour of lithium and beryllium; preparation, properties, and uses of compounds of sodium (sodium carbonate, sodium chloride, sodium hydroxide, sodium hydrogen carbonate) and calcium (calcium oxide, calcium hydroxide, calcium carbonate, calcium sulphate).",
+              "key_concepts": ["Hydrogen", "Alkali metals", "Alkaline earth metals", "Hydrides", "Water properties"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "p-Block Elements",
+          "difficulty": "medium",
+          "weightage": 6,
+          "description": "Elements of groups 13-18",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "p-Block Elements",
+              "content": "Oxidation state and trends in chemical reactivity of elements of groups 13-17; anomalous properties of boron, carbon, nitrogen, oxygen, and fluorine with respect to other elements in their respective groups. Group 13: Reactivity towards acids, alkalis, and halogens; preparation, properties, and uses of borax, orthoboric acid, diborane, boron trifluoride, aluminium chloride, and alums; uses of boron and aluminium. Group 14: Reactivity towards water and halogen; allotropes of carbon and uses of carbon; preparation, properties, and uses of carbon monoxide, carbon dioxide, silicon dioxide, silicones, silicates, zeolites. Group 15: Reactivity towards hydrogen, oxygen, and halogen; allotropes of phosphorous; preparation, properties, and uses of dinitrogen, ammonia, nitric acid, phosphine, phosphorus trichloride, phosphorus pentachloride; oxides of nitrogen and oxoacids of phosphorus. Group 16: Reactivity towards hydrogen, oxygen, and halogen; simple oxides; allotropes of sulfur; preparation/manufacture, properties, and uses of dioxygen, ozone, sulfur dioxide, sulfuric acid; oxoacids of sulfur. Group 17: Reactivity towards hydrogen, oxygen, and metals; preparation/manufacture, properties, and uses of chlorine, hydrogen chloride and interhalogen compounds; oxoacids of halogens, bleaching powder. Group 18: Chemical properties and uses; compounds of xenon with fluorine and oxygen.",
+              "key_concepts": ["p-block elements", "Group properties", "Allotropes", "Oxidation states", "Compounds and uses"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "d-Block and f-Block Elements",
+          "difficulty": "hard",
+          "weightage": 6,
+          "description": "Transition and inner transition elements",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Transition Elements",
+              "content": "d-Block Elements: Oxidation states and their stability; standard electrode potentials; interstitial compounds; alloys; catalytic properties; applications; preparation, structure, and reactions of oxoanions of chromium and manganese. f-Block Elements: Lanthanoid and actinoid contractions; oxidation states; general characteristics.",
+              "key_concepts": ["Transition elements", "Oxidation states", "Catalytic properties", "Lanthanides", "Actinides"],
+              "difficulty": "hard",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T05",
+          "topic_name": "Coordination Compounds",
+          "difficulty": "hard",
+          "weightage": 4,
+          "description": "Complex compounds and bonding",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Coordination Chemistry",
+              "content": "Werner's theory; Nomenclature, cis-trans and ionization isomerism, hybridization and geometries (linear, tetrahedral, square planar and octahedral) of mononuclear coordination compounds; Bonding [VBT and CFT (octahedral and tetrahedral fields)]; Magnetic properties (spin-only) and colour of 3d-series coordination compounds; Ligands and spectrochemical series; Stability; Importance and applications; Metal carbonyls.",
+              "key_concepts": ["Werner's theory", "Isomerism", "Crystal field theory", "Ligand field theory", "Spectrochemical series"],
+              "difficulty": "hard",
+              "formulas": ["Crystal field splitting energy Δ₀", "CFSE = (-0.4n_t + 0.6n_e)Δ₀"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T06",
+          "topic_name": "Metallurgy and Qualitative Analysis",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Metal extraction and analysis",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Metallurgy and Analysis",
+              "content": "Isolation of Metals: Metal ores and their concentration; extraction of crude metal from concentrated ores: thermodynamic (iron, copper, zinc) and electrochemical (aluminium) principles of metallurgy; cyanide process (silver and gold); refining. Principles of Qualitative Analysis: Groups I to V (only Ag⁺, Hg²⁺, Cu²⁺, Pb²⁺, Fe³⁺, Cr³⁺, Al³⁺, Ca²⁺, Ba²⁺, Zn²⁺, Mn²⁺ and Mg²⁺); Nitrate, halides (excluding fluoride), carbonate and bicarbonate, sulphate and sulphide.",
+              "key_concepts": ["Metallurgy", "Ore concentration", "Metal extraction", "Qualitative analysis", "Group analysis"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T07",
+          "topic_name": "Environmental Chemistry",
+          "difficulty": "easy",
+          "weightage": 3,
+          "description": "Environmental pollution and chemistry",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Environmental Chemistry",
+              "content": "Atmospheric pollution; water pollution; soil pollution; industrial waste; strategies to control environmental pollution; green chemistry.",
+              "key_concepts": ["Air pollution", "Water pollution", "Soil pollution", "Green chemistry"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH03",
+      "chapter_name": "Organic Chemistry",
+      "weightage": 35,
+      "description": "Organic compounds and reactions",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Basic Principles of Organic Chemistry",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Fundamental organic chemistry concepts",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Basic Organic Concepts",
+              "content": "Hybridisation of carbon; σ and π-bonds; Shapes of simple organic molecules; aromaticity; Structural and geometrical isomerism; Stereoisomers and stereochemical relationship (enantiomers, diastereomers, meso) of compounds containing only up to two asymmetric centres (R,S and E,Z configurations excluded); Determination of empirical and molecular formulae of simple compounds by combustion method only; IUPAC nomenclature of organic molecules (hydrocarbons, including simple cyclic hydrocarbons and their mono-functional and bi-functional derivatives only); Hydrogen bonding effects; Inductive, Resonance and Hyperconjugative effects; Acidity and basicity of organic compounds; Reactive intermediates produced during homolytic and heterolytic bond cleavage; Formation, structure and stability of carbocations, carbanions and free radicals.",
+              "key_concepts": ["Hybridisation", "Isomerism", "Stereochemistry", "IUPAC nomenclature", "Electronic effects", "Reaction intermediates"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Hydrocarbons",
+          "difficulty": "medium",
+          "weightage": 6,
+          "description": "Alkanes, alkenes, alkynes, and aromatics",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Hydrocarbon Chemistry",
+              "content": "Alkanes: Homologous series; Physical properties (melting points, boiling points and density) and effect of branching on them. Conformations of ethane and butane (Newman projections only); Preparation from alkyl halides and aliphatic carboxylic acids; Reactions: combustion, halogenation (including allylic and benzylic halogenation) and oxidation. Alkenes and Alkynes: Physical properties (boiling points, density and dipole moments); Preparation by elimination reactions; Acid catalysed hydration (excluding the stereochemistry of addition and elimination); Metal acetylides; Reactions of alkenes with KMnO₄ and ozone; Reduction of alkenes and alkynes; Electrophilic addition reactions of alkenes with X₂, HX, HOX, (X=halogen); Effect of peroxide on addition reactions; cyclic polymerization reaction of alkynes. Benzene: Structure; Electrophilic substitution reactions: halogenation, nitration, sulphonation, Friedel-Crafts alkylation and acylation; Effect of directing groups (monosubstituted benzene) in these reactions.",
+              "key_concepts": ["Alkanes", "Alkenes", "Alkynes", "Conformations", "Electrophilic addition", "Aromatic substitution"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Haloalkanes and Haloarenes",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Halogenated hydrocarbons",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Halo Compounds",
+              "content": "Rearrangement reactions of alkyl carbocation; Grignard reactions; Nucleophilic substitution reactions and their stereochemical aspects.",
+              "key_concepts": ["Haloalkanes", "Haloarenes", "Grignard reagents", "Nucleophilic substitution"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Alcohols, Phenols and Ethers",
+          "difficulty": "medium",
+          "weightage": 3,
+          "description": "Oxygen-containing organic compounds",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Alcohols and Ethers",
+              "content": "Alcohols: Physical properties; Reactions: esterification, dehydration (formation of alkenes and ethers); Reactions with: sodium, phosphorus halides, ZnCl₂/concentrated HCl, thionyl chloride; Conversion of alcohols into aldehydes, ketones and carboxylic acids. Ethers: Preparation by Williamson's synthesis; C-O bond cleavage reactions.",
+              "key_concepts": ["Alcohols", "Phenols", "Ethers", "Williamson synthesis", "Dehydration"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T05",
+          "topic_name": "Aldehydes and Ketones",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Carbonyl compounds",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Carbonyl Compounds",
+              "content": "Preparation of: aldehydes and ketones from acid chlorides and nitriles; aldehydes from esters; benzaldehyde from toluene and benzene; Reactions: oxidation, reduction, oxime and hydrazone formation; Aldol condensation, Cannizzaro reaction, Haloform reaction; Nucleophilic addition reaction with RMgX, NaHSO₃, HCN, alcohol, amine.",
+              "key_concepts": ["Aldehydes", "Ketones", "Carbonyl reactions", "Nucleophilic addition", "Condensation reactions"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T06",
+          "topic_name": "Carboxylic Acids and Acid Derivatives",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Carboxylic acids and their derivatives",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Carboxylic Compounds",
+              "content": "Carboxylic Acids: Physical properties; Preparation: from nitriles, Grignard reagents, hydrolysis of esters and amides; Preparation of benzoic acid from alkylbenzenes; Reactions: reduction, halogenation, formation of esters, acid chlorides and amides. Amines: Preparation from nitro compounds, nitriles and amides; Reactions: Hoffmann bromamide degradation, Gabriel phthalimide synthesis; Reaction with nitrous acid, Azo coupling reaction of diazonium salts of aromatic amines; Sandmeyer and related reactions of diazonium salts; Carbylamine reaction, Hinsberg test, Alkylation and acylation reactions. Haloarenes: Reactions: Fittig, Wurtz-Fittig; Nucleophilic aromatic substitution in haloarenes and substituted haloarenes (excluding benzyne mechanism and cine substitution).",
+              "key_concepts": ["Carboxylic acids", "Acid derivatives", "Amines", "Diazonium salts", "Substitution reactions"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T07",
+          "topic_name": "Biomolecules and Polymers",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Biological molecules and polymers",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Biomolecules",
+              "content": "Carbohydrates: Classification; Mono- and di-saccharides (glucose and sucrose); Oxidation; Reduction; Glycoside formation and hydrolysis of disaccharides (sucrose, maltose, lactose); Anomers. Proteins: Amino acids; Peptide linkage; Structure of peptides (primary and secondary); Types of proteins (fibrous and globular). Nucleic acids: Chemical composition and structure of DNA and RNA. Polymers: Types of polymerization (addition, condensation); Homo and copolymers; Natural rubber; Cellulose; Nylon; Teflon; Bakelite; PVC; Bio-degradable polymers; Applications of polymers.",
+              "key_concepts": ["Carbohydrates", "Proteins", "Nucleic acids", "Polymers", "Polymerization"],
+              "difficulty": "medium",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T08",
+          "topic_name": "Chemistry in Everyday Life",
+          "difficulty": "easy",
+          "weightage": 3,
+          "description": "Applied chemistry in daily life",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Applied Chemistry",
+              "content": "Drug-target interaction; Therapeutic action, and examples (excluding structures), of antacids, antihistamines, tranquilizers, analgesics, antimicrobials, and antifertility drugs; Artificial sweeteners (names only); Soaps, detergents, and cleansing action.",
+              "key_concepts": ["Drugs", "Antacids", "Antihistamines", "Analgesics", "Antimicrobials", "Soaps and detergents"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        },
+        {
+          "topic_id": "T09",
+          "topic_name": "Practical Organic Chemistry",
+          "difficulty": "easy",
+          "weightage": 3,
+          "description": "Laboratory techniques in organic chemistry",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Practical Techniques",
+              "content": "Detection of elements (N, S, halogens); Detection and identification of the following functional groups: hydroxyl (alcoholic and phenolic), carbonyl (aldehyde and ketone), carboxyl, amino and nitro.",
+              "key_concepts": ["Element detection", "Functional group identification", "Organic analysis"],
+              "difficulty": "easy",
+              "formulas": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

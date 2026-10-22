@@ -1,0 +1,269 @@
+{
+  "exam": "JEE_ADVANCED",
+  "subject": "Physics",
+  "version": "2025",
+  "total_chapters": 5,
+  "chapters": [
+    {
+      "chapter_id": "CH01",
+      "chapter_name": "General Physics",
+      "weightage": 10,
+      "description": "General concepts and experimental skills",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Units and Measurements",
+          "difficulty": "easy",
+          "weightage": 5,
+          "description": "Units, dimensions, and measurement techniques",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "General Units and Dimensions",
+              "content": "General Units and dimensions, dimensional analysis; least count, significant figures; Methods of measurement and error analysis for physical quantities pertaining to the following experiments: Experiments based on using Vernier calipers and screw gauge (micrometer), Determination of g using simple pendulum, Young's modulus - elasticity of the material, Surface tension of water by capillary rise and effect of detergents. Specific heat of a liquid using calorimeter, focal length of a concave mirror and a convex lens using u-v method, Speed of sound using resonance column, Verification of Ohm's law using voltmeter and ammeter, and specific resistance of the material of a wire using meter bridge and post office box.",
+              "key_concepts": ["Units and dimensions", "Dimensional analysis", "Significant figures", "Error analysis", "Experimental techniques"],
+              "difficulty": "easy",
+              "formulas": ["Dimensional formula", "Error propagation", "Least count"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH02",
+      "chapter_name": "Mechanics",
+      "weightage": 30,
+      "description": "Kinematics, dynamics, and mechanical properties",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Kinematics",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Motion in one and two dimensions",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Motion Analysis",
+              "content": "Kinematics in one and two dimensions (Cartesian coordinates only), projectiles; Uniform circular motion; Relative velocity.",
+              "key_concepts": ["Projectile motion", "Uniform circular motion", "Relative velocity", "Cartesian coordinates"],
+              "difficulty": "medium",
+              "formulas": ["x = ut + 1/2at²", "v = u + at", "v² = u² + 2as", "Range = u²sin(2θ)/g"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Laws of Motion",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Newton's laws and friction",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Newton's Laws",
+              "content": "Newton's laws of motion; Inertial and uniformly accelerated frames of reference; Static and dynamic friction; Kinetic and potential energy; Work and power; Conservation of linear momentum and mechanical energy.",
+              "key_concepts": ["Newton's laws", "Inertial frames", "Friction", "Energy conservation", "Momentum conservation"],
+              "difficulty": "medium",
+              "formulas": ["F = ma", "p = mv", "KE = 1/2mv²", "PE = mgh", "Work = F·d"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Systems of Particles and Rigid Body",
+          "difficulty": "hard",
+          "weightage": 8,
+          "description": "Center of mass and rotational dynamics",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Center of Mass and Rotation",
+              "content": "Systems of particles; Centre of mass and its motion; Impulse; Elastic and inelastic collisions. Rigid body, moment of inertia, parallel and perpendicular axes theorems, moment of inertia of uniform bodies with simple geometrical shapes; Angular momentum; Torque; Conservation of angular momentum and its applications; Dynamics of rigid bodies with fixed axis of rotation; Rolling without slipping of rings, cylinders and spheres; Equilibrium of rigid bodies; Collision of point masses with rigid bodies. Forced and damped oscillation (in one dimension), resonance.",
+              "key_concepts": ["Center of mass", "Moment of inertia", "Angular momentum", "Torque", "Rotational dynamics", "Collisions"],
+              "difficulty": "hard",
+              "formulas": ["I = Icm + Md²", "τ = Iα", "L = Iω", "Conservation: L₁ = L₂"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Gravitation",
+          "difficulty": "medium",
+          "weightage": 4,
+          "description": "Gravitational force and satellite motion",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Gravitation and Satellite Motion",
+              "content": "Law of gravitation; Gravitational potential and field; Acceleration due to gravity; Kepler's law, Geostationary orbits, Motion of planets and satellites in circular orbits; Escape velocity.",
+              "key_concepts": ["Universal gravitation", "Gravitational field", "Kepler's laws", "Orbital mechanics", "Escape velocity"],
+              "difficulty": "medium",
+              "formulas": ["F = GMm/r²", "g = GM/r²", "v_escape = √(2GM/R)", "T² ∝ r³"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T05",
+          "topic_name": "Mechanics of Solids and Fluids",
+          "difficulty": "medium",
+          "weightage": 8,
+          "description": "Properties of solids and fluids",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Solids and Fluids",
+              "content": "Pressure in a fluid; Pascal's law; Buoyancy; Surface energy and surface tension, angle of contact, drops, bubbles and capillary rise. Viscosity (Poiseuille's equation excluded), Modulus of rigidity and bulk modulus in mechanics. Stoke's law; Terminal velocity, Streamline flow, equation of continuity, Bernoulli's theorem and its applications. Wave motion (plane waves only), longitudinal and transverse waves, superposition of waves; Progressive and stationary waves; Vibration of strings and air columns; Resonance; Beats; Speed of sound in gases; Doppler effect (in sound).",
+              "key_concepts": ["Fluid pressure", "Pascal's law", "Buoyancy", "Surface tension", "Viscosity", "Bernoulli's theorem", "Wave motion"],
+              "difficulty": "medium",
+              "formulas": ["P = ρgh", "F_b = ρVg", "F = 6πηrv", "v = √(T/μ)", "f' = f(v±v_s)/v_s"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH03",
+      "chapter_name": "Thermal Physics",
+      "weightage": 15,
+      "description": "Heat, thermodynamics, and kinetic theory",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Thermal Properties",
+          "difficulty": "medium",
+          "weightage": 8,
+          "description": "Heat transfer and thermal properties",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Heat and Thermodynamics",
+              "content": "Thermal expansion of solids, liquids and gases; Calorimetry, latent heat; Heat conduction in one dimension; Elementary concepts of convection and radiation; Newton's law of cooling; Ideal gas laws; Specific heats (C_v and C_p for monoatomic and diatomic gases); Isothermal and adiabatic processes, bulk modulus of gases; Equivalence of heat and work; First law of thermodynamics and its applications (only for ideal gases); Second law of thermodynamics, reversible and irreversible processes, Carnot engine and its efficiency; Blackbody radiation: absorptive and emissive powers; Kirchhoff's law; Wien's displacement law, Stefan's law.",
+              "key_concepts": ["Thermal expansion", "Calorimetry", "Heat transfer", "Ideal gas laws", "Thermodynamic laws", "Heat engines"],
+              "difficulty": "medium",
+              "formulas": ["ΔL = αL₀ΔT", "Q = mcΔT", "PV = nRT", "η = 1 - T_cold/T_hot", "σT⁴"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH04",
+      "chapter_name": "Electricity and Magnetism",
+      "weightage": 25,
+      "description": "Electrostatics, current electricity, and magnetism",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Electrostatics",
+          "difficulty": "medium",
+          "weightage": 6,
+          "description": "Electric charges, fields, and potential",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Electric Fields and Potential",
+              "content": "Coulomb's law; Electric field and potential; Electrical potential energy of a system of point charges and of electrical dipoles in a uniform electrostatic field; Electric field lines; Flux of electric field; Gauss's law and its application in simple cases, such as, to find field due to infinitely long straight wire, uniformly charged infinite plane sheet and uniformly charged thin spherical shell. Capacitance; Parallel plate capacitor with and without dielectrics; Capacitors in series and parallel; Energy stored in a capacitor.",
+              "key_concepts": ["Coulomb's law", "Electric field", "Gauss's law", "Electric potential", "Capacitance", "Dielectrics"],
+              "difficulty": "medium",
+              "formulas": ["F = kq₁q₂/r²", "E = F/q", "Φ_E = ∮E·dA = Q/ε₀", "C = Q/V", "U = 1/2CV²"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Current Electricity",
+          "difficulty": "medium",
+          "weightage": 6,
+          "description": "Electric current and circuits",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Electric Current and Circuits",
+              "content": "Electric current; Ohm's law; Series and parallel arrangements of resistances and cells; Kirchhoff's laws and simple applications; Heating effect of current.",
+              "key_concepts": ["Electric current", "Ohm's law", "Kirchhoff's laws", "Resistance combinations", "Joule heating"],
+              "difficulty": "medium",
+              "formulas": ["V = IR", "P = I²R", "1/R_eq = 1/R₁ + 1/R₂", "R_eq = R₁ + R₂"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T03",
+          "topic_name": "Magnetic Effects",
+          "difficulty": "hard",
+          "weightage": 8,
+          "description": "Magnetic fields and electromagnetic induction",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Magnetism and Induction",
+              "content": "Biot–Savart's law and Ampere's law; Magnetic field near a current-carrying straight wire, along the axis of a circular coil and inside a long straight solenoid. Force on a moving charge and on a current-carrying wire in a uniform magnetic field. Magnetic moment of a current loop; Effect of a uniform magnetic field on a current loop; Moving coil galvanometer, voltmeter, ammeter and their conversions. Electromagnetic induction: Faraday's law, Lenz's law; Self and mutual inductance; RC, LR, LC and LCR (in series) circuits with d.c. and a.c. sources.",
+              "key_concepts": ["Biot-Savart law", "Ampere's law", "Magnetic force", "Electromagnetic induction", "AC circuits"],
+              "difficulty": "hard",
+              "formulas": ["dB = (μ₀/4π)(Idl×r̂)/r²", "F = q(v×B)", "ε = -dΦ/dt", "Z = √(R² + (X_L - X_C)²)"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T04",
+          "topic_name": "Electromagnetic Waves",
+          "difficulty": "medium",
+          "weightage": 5,
+          "description": "Electromagnetic waves and spectrum",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "EM Waves",
+              "content": "Electromagnetic waves and their characteristics. Electromagnetic spectrum (radio waves, microwaves, infrared, visible, ultraviolet, x-rays, gamma rays) including elementary facts about their uses.",
+              "key_concepts": ["Electromagnetic waves", "EM spectrum", "Wave properties", "Applications"],
+              "difficulty": "medium",
+              "formulas": ["c = 1/√(μ₀ε₀)", "E = cB", "λ = c/f"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "CH05",
+      "chapter_name": "Optics and Modern Physics",
+      "weightage": 20,
+      "description": "Optical phenomena and modern physics",
+      "topics": [
+        {
+          "topic_id": "T01",
+          "topic_name": "Optics",
+          "difficulty": "medium",
+          "weightage": 10,
+          "description": "Ray and wave optics",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Ray and Wave Optics",
+              "content": "Rectilinear propagation of light; Reflection and refraction at plane and spherical surfaces; Total internal reflection; Deviation and dispersion of light by a prism; Thin lenses; Combinations of mirrors and thin lenses; Magnification. Wave nature of light: Huygen's principle, interference limited to Young's double slit experiment. Diffraction due to a single slit. Polarization of light, plane polarized light; Brewster's law, Polaroids.",
+              "key_concepts": ["Reflection", "Refraction", "Lenses", "Interference", "Diffraction", "Polarization"],
+              "difficulty": "medium",
+              "formulas": ["1/f = 1/v + 1/u", "m = v/u", "β = λD/d", "sinC = 1/n", "tanθ_B = n"]
+            }
+          ]
+        },
+        {
+          "topic_id": "T02",
+          "topic_name": "Modern Physics",
+          "difficulty": "medium",
+          "weightage": 10,
+          "description": "Atomic and nuclear physics",
+          "subtopics": [
+            {
+              "subtopic_id": "ST01",
+              "subtopic_name": "Atomic and Nuclear Physics",
+              "content": "Atomic nucleus; α, β and γ radiations; Law of radioactive decay; Decay constant; Half-life and mean life; Binding energy and its calculation; Fission and fusion processes; Energy calculation in these processes. Photoelectric effect; Bohr's theory of hydrogen-like atoms; Characteristic and continuous X-rays, Moseley's law; de Broglie wavelength of matter waves.",
+              "key_concepts": ["Radioactive decay", "Half-life", "Binding energy", "Nuclear fission", "Nuclear fusion", "Photoelectric effect", "Bohr model", "X-rays", "de Broglie wavelength"],
+              "difficulty": "medium",
+              "formulas": ["N = N₀e^(-λt)", "t_1/2 = ln2/λ", "E = mc²", "KE_max = hν - φ₀", "λ = h/p", "1/λ = R(1/n₁² - 1/n₂²)"]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

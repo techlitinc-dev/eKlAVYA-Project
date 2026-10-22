@@ -1,0 +1,30 @@
+# Python / Virtual Environments
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables (keep .env.example)
+.env*
+!.env.example
+
+# Firebase & Service Account Credentials
+*firebase-adminsdk*.json
+firebase-credentials.json
+serviceAccountKey.json
+
+# Logs & temporary files
+logs/
+*.log
+.DS_Store
+
+# Node / Frontend
+node_modules/
+.next/
+dist/
+build/
