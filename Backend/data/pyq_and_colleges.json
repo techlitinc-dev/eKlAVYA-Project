@@ -1,0 +1,376 @@
+{
+  "pyq_questions": [
+    {
+      "id": "q_jee_2024_ph_01",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "physics",
+      "subject": "Physics",
+      "chapterId": "rotational_motion",
+      "chapter": "Rotational Motion",
+      "topicId": "moment_of_inertia",
+      "topic": "Moment of Inertia & Rolling Motion",
+      "year": 2024,
+      "shift": "29 Jan Shift 1",
+      "type": "MCQ",
+      "difficulty": "medium",
+      "revisionZone": "high_yield",
+      "ncertPages": "Class 11, pp. 164-172",
+      "statementHtml": "<p>A solid sphere of mass $M$ and radius $R$ rolls without slipping down an inclined plane of inclination $\\theta$. The acceleration of the center of mass of the sphere is:</p>",
+      "options": [
+        { "key": "A", "html": "<p>$\\frac{5}{7} g \\sin \\theta$</p>" },
+        { "key": "B", "html": "<p>$\\frac{2}{5} g \\sin \\theta$</p>" },
+        { "key": "C", "html": "<p>$\\frac{1}{2} g \\sin \\theta$</p>" },
+        { "key": "D", "html": "<p>$\\frac{7}{10} g \\sin \\theta$</p>" }
+      ],
+      "correctOption": "A",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>For a body rolling without slipping down an incline of angle $\\theta$, the linear acceleration is given by $a = \\frac{g \\sin \\theta}{1 + I / (M R^2)}$. For a solid sphere, $I = \\frac{2}{5} M R^2$, so $a = \\frac{g \\sin \\theta}{1 + 2/5} = \\frac{5}{7} g \\sin \\theta$.</p>",
+      "commonMistakeType": "formula_mixup",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ph_rot_01"
+    },
+    {
+      "id": "q_jee_2024_ph_02",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "physics",
+      "subject": "Physics",
+      "chapterId": "rotational_motion",
+      "chapter": "Rotational Motion",
+      "topicId": "moment_of_inertia",
+      "topic": "Moment of Inertia & Rolling Motion",
+      "year": 2024,
+      "shift": "30 Jan Shift 2",
+      "type": "NAT",
+      "difficulty": "hard",
+      "revisionZone": "trap_zone",
+      "ncertPages": "Class 11, pp. 166-170",
+      "statementHtml": "<p>A uniform disc of mass $4\\text{ kg}$ and radius $2\\text{ m}$ is rotating about an axis passing through its center and perpendicular to its plane with an angular velocity of $3\\text{ rad/s}$. Calculate its rotational kinetic energy in Joules.</p>",
+      "options": [],
+      "correctOption": null,
+      "numericalAnswer": 36.0,
+      "numericalTolerance": 0.1,
+      "correctMarks": 4,
+      "negativeMarks": 0,
+      "solutionHtml": "<p>Moment of inertia of a uniform disc $I = \\frac{1}{2} M R^2 = \\frac{1}{2} \\times 4 \\times 2^2 = 8\\text{ kg}\\cdot\\text{m}^2$. Rotational kinetic energy $K = \\frac{1}{2} I \\omega^2 = \\frac{1}{2} \\times 8 \\times 3^2 = 36\\text{ J}$.</p>",
+      "commonMistakeType": "calculation",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ph_rot_02"
+    },
+    {
+      "id": "q_jee_2023_ph_03",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "physics",
+      "subject": "Physics",
+      "chapterId": "electrostatics",
+      "chapter": "Electrostatics",
+      "topicId": "gauss_law",
+      "topic": "Electric Flux & Gauss's Law",
+      "year": 2023,
+      "shift": "06 Apr Shift 1",
+      "type": "MCQ",
+      "difficulty": "easy",
+      "revisionZone": "must_revise",
+      "ncertPages": "Class 12, pp. 33-40",
+      "statementHtml": "<p>A charge $q$ is placed at the center of the line joining two equal charges $Q$. The system of the three charges will be in equilibrium if $q$ is equal to:</p>",
+      "options": [
+        { "key": "A", "html": "<p>$-\\frac{Q}{2}$</p>" },
+        { "key": "B", "html": "<p>$-\\frac{Q}{4}$</p>" },
+        { "key": "C", "html": "<p>$+\\frac{Q}{4}$</p>" },
+        { "key": "D", "html": "<p>$+\\frac{Q}{2}$</p>" }
+      ],
+      "correctOption": "B",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>For equilibrium of extreme charge $Q$, net force must be zero: $\\frac{k Q^2}{(2x)^2} + \\frac{k Q q}{x^2} = 0 \\implies \\frac{Q}{4} + q = 0 \\implies q = -\\frac{Q}{4}$.</p>",
+      "commonMistakeType": "conceptual",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ph_elec_01"
+    },
+    {
+      "id": "q_jee_2024_ch_01",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "chemistry",
+      "subject": "Chemistry",
+      "chapterId": "chemical_kinetics",
+      "chapter": "Chemical Kinetics",
+      "topicId": "first_order_kinetics",
+      "topic": "First Order Reactions & Half-Life",
+      "year": 2024,
+      "shift": "27 Jan Shift 1",
+      "type": "MCQ",
+      "difficulty": "medium",
+      "revisionZone": "high_yield",
+      "ncertPages": "Class 12, pp. 105-112",
+      "statementHtml": "<p>For a first-order reaction, the time required for $99.9\\%$ completion is approximately how many times the half-life ($t_{1/2}$) of the reaction?</p>",
+      "options": [
+        { "key": "A", "html": "<p>$2$</p>" },
+        { "key": "B", "html": "<p>$5$</p>" },
+        { "key": "C", "html": "<p>$10$</p>" },
+        { "key": "D", "html": "<p>$100$</p>" }
+      ],
+      "correctOption": "C",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>$t_{99.9\\%} = \\frac{2.303}{k} \\log\\left(\\frac{100}{0.1}\\right) = \\frac{2.303 \\times 3}{k}$. Since $t_{1/2} = \\frac{2.303 \\times 0.3010}{k}$, $\\frac{t_{99.9\\%}}{t_{1/2}} = \\frac{3}{0.3010} \\approx 10$.</p>",
+      "commonMistakeType": "calculation",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ch_kin_01"
+    },
+    {
+      "id": "q_jee_2024_ma_01",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "mathematics",
+      "subject": "Mathematics",
+      "chapterId": "definite_integration",
+      "chapter": "Definite Integration",
+      "topicId": "kings_property",
+      "topic": "Properties of Definite Integrals",
+      "year": 2024,
+      "shift": "31 Jan Shift 1",
+      "type": "MCQ",
+      "difficulty": "medium",
+      "revisionZone": "high_yield",
+      "ncertPages": "Class 12, pp. 341-349",
+      "statementHtml": "<p>The value of the definite integral $I = \\int_{0}^{\\pi/2} \\frac{\\sqrt{\\sin x}}{\\sqrt{\\sin x} + \\sqrt{\\cos x}} \\, dx$ is:</p>",
+      "options": [
+        { "key": "A", "html": "<p>$\\frac{\\pi}{2}$</p>" },
+        { "key": "B", "html": "<p>$\\frac{\\pi}{4}$</p>" },
+        { "key": "C", "html": "<p>$\\pi$</p>" },
+        { "key": "D", "html": "<p>$0$</p>" }
+      ],
+      "correctOption": "B",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>Using King's property $\\int_0^a f(x)dx = \\int_0^a f(a-x)dx$, adding both gives $2I = \\int_0^{\\pi/2} 1\\,dx = \\frac{\\pi}{2} \\implies I = \\frac{\\pi}{4}$.</p>",
+      "commonMistakeType": "formula_mixup",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ma_int_01"
+    },
+    {
+      "id": "q_neet_2024_bio_01",
+      "examId": "neet",
+      "exam": "NEET-UG",
+      "subjectId": "biology",
+      "subject": "Biology",
+      "chapterId": "cell_unit_of_life",
+      "chapter": "Cell: The Unit of Life",
+      "topicId": "eukaryotic_organelles",
+      "topic": "Mitochondria & Plastids",
+      "year": 2024,
+      "shift": "05 May Single Shift",
+      "type": "MCQ",
+      "difficulty": "easy",
+      "revisionZone": "high_yield",
+      "ncertPages": "Class 11 Biology, pp. 134-136",
+      "statementHtml": "<p>Which of the following cell organelles contains its own double-stranded circular DNA and $70\\text{S}$ ribosomes?</p>",
+      "options": [
+        { "key": "A", "html": "<p>Golgi apparatus</p>" },
+        { "key": "B", "html": "<p>Mitochondria</p>" },
+        { "key": "C", "html": "<p>Lysosome</p>" },
+        { "key": "D", "html": "<p>Endoplasmic Reticulum</p>" }
+      ],
+      "correctOption": "B",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>Mitochondria and chloroplasts are semi-autonomous organelles containing circular dsDNA and $70\\text{S}$ ribosomes (NCERT Class 11, p. 135).</p>",
+      "commonMistakeType": "silly",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_bio_cell_01"
+    },
+    {
+      "id": "q_neet_2023_bio_02",
+      "examId": "neet",
+      "exam": "NEET-UG",
+      "subjectId": "biology",
+      "subject": "Biology",
+      "chapterId": "molecular_basis_inheritance",
+      "chapter": "Molecular Basis of Inheritance",
+      "topicId": "dna_replication",
+      "topic": "DNA Packaging & Replication",
+      "year": 2023,
+      "shift": "07 May Single Shift",
+      "type": "MCQ",
+      "difficulty": "medium",
+      "revisionZone": "trap_zone",
+      "ncertPages": "Class 12 Biology, pp. 99-106",
+      "statementHtml": "<p>In prokaryotes like <i>E. coli</i>, the DNA is held with some proteins that are positively charged in a region termed as:</p>",
+      "options": [
+        { "key": "A", "html": "<p>Nucleosome</p>" },
+        { "key": "B", "html": "<p>Nucleoid</p>" },
+        { "key": "C", "html": "<p>Chromatin</p>" },
+        { "key": "D", "html": "<p>Solenoid</p>" }
+      ],
+      "correctOption": "B",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>In prokaryotes, negatively charged DNA is held with positively charged non-histone polyamine proteins in a region called the <b>Nucleoid</b> (NCERT Class 12, p. 99).</p>",
+      "commonMistakeType": "conceptual",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_bio_mol_01"
+    }
+  ],
+  "ncert_modules": [
+    {
+      "moduleId": "ncert_bio_01",
+      "subjectId": "biology",
+      "book": "Class 11 Biology",
+      "chapterId": "cell_unit_of_life",
+      "chapterName": "Cell: The Unit of Life",
+      "ncertPages": "125-144",
+      "totalQuestions": 120,
+      "highYieldCount": 45,
+      "mustReviseCount": 50,
+      "trapZoneCount": 25
+    },
+    {
+      "moduleId": "ncert_bio_02",
+      "subjectId": "biology",
+      "book": "Class 12 Biology",
+      "chapterId": "molecular_basis_inheritance",
+      "chapterName": "Molecular Basis of Inheritance",
+      "ncertPages": "95-126",
+      "totalQuestions": 165,
+      "highYieldCount": 70,
+      "mustReviseCount": 60,
+      "trapZoneCount": 35
+    },
+    {
+      "moduleId": "ncert_chem_01",
+      "subjectId": "chemistry",
+      "book": "Class 12 Chemistry Part 1",
+      "chapterId": "chemical_kinetics",
+      "chapterName": "Chemical Kinetics",
+      "ncertPages": "95-120",
+      "totalQuestions": 95,
+      "highYieldCount": 40,
+      "mustReviseCount": 35,
+      "trapZoneCount": 20
+    },
+    {
+      "moduleId": "ncert_phy_01",
+      "subjectId": "physics",
+      "book": "Class 11 Physics Part 1",
+      "chapterId": "rotational_motion",
+      "chapterName": "System of Particles and Rotational Motion",
+      "ncertPages": "141-178",
+      "totalQuestions": 110,
+      "highYieldCount": 45,
+      "mustReviseCount": 40,
+      "trapZoneCount": 25
+    }
+  ],
+  "colleges": [
+    {
+      "id": "iit_bombay",
+      "name": "Indian Institute of Technology Bombay",
+      "exam": "jee_advanced",
+      "nirfRank": 3,
+      "state": "Maharashtra",
+      "city": "Mumbai",
+      "branches": [
+        {
+          "branchCode": "CSE",
+          "branchName": "Computer Science and Engineering",
+          "seats": 120,
+          "cutoffs": {
+            "2025": { "General": 68, "OBC-NCL": 145, "SC": 890, "ST": 420, "EWS": 210 },
+            "2024": { "General": 72, "OBC-NCL": 152, "SC": 920, "ST": 445, "EWS": 225 }
+          }
+        },
+        {
+          "branchCode": "EE",
+          "branchName": "Electrical Engineering",
+          "seats": 110,
+          "cutoffs": {
+            "2025": { "General": 480, "OBC-NCL": 820, "SC": 2400, "ST": 1150, "EWS": 690 },
+            "2024": { "General": 510, "OBC-NCL": 860, "SC": 2510, "ST": 1200, "EWS": 710 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "iit_kanpur",
+      "name": "Indian Institute of Technology Kanpur",
+      "exam": "jee_advanced",
+      "nirfRank": 4,
+      "state": "Uttar Pradesh",
+      "city": "Kanpur",
+      "branches": [
+        {
+          "branchCode": "CSE",
+          "branchName": "Computer Science and Engineering",
+          "seats": 115,
+          "cutoffs": {
+            "2025": { "General": 248, "OBC-NCL": 510, "SC": 1650, "ST": 820, "EWS": 380 },
+            "2024": { "General": 255, "OBC-NCL": 530, "SC": 1700, "ST": 850, "EWS": 395 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "nit_trichy",
+      "name": "National Institute of Technology Tiruchirappalli",
+      "exam": "jee_main",
+      "nirfRank": 9,
+      "state": "Tamil Nadu",
+      "city": "Tiruchirappalli",
+      "branches": [
+        {
+          "branchCode": "CSE",
+          "branchName": "Computer Science and Engineering",
+          "seats": 140,
+          "cutoffs": {
+            "2025": { "General": 1250, "OBC-NCL": 2400, "SC": 8900, "ST": 4100, "EWS": 1850 },
+            "2024": { "General": 1310, "OBC-NCL": 2520, "SC": 9100, "ST": 4300, "EWS": 1920 }
+          }
+        },
+        {
+          "branchCode": "ECE",
+          "branchName": "Electronics and Communication Engineering",
+          "seats": 130,
+          "cutoffs": {
+            "2025": { "General": 3400, "OBC-NCL": 5800, "SC": 15200, "ST": 7600, "EWS": 4500 },
+            "2024": { "General": 3550, "OBC-NCL": 6010, "SC": 15600, "ST": 7800, "EWS": 4700 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "aiims_delhi",
+      "name": "All India Institute of Medical Sciences, New Delhi",
+      "exam": "neet",
+      "nirfRank": 1,
+      "state": "Delhi",
+      "city": "New Delhi",
+      "branches": [
+        {
+          "branchCode": "MBBS",
+          "branchName": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+          "seats": 125,
+          "cutoffs": {
+            "2025": { "General": 57, "OBC-NCL": 240, "SC": 1150, "ST": 2900, "EWS": 195 },
+            "2024": { "General": 61, "OBC-NCL": 255, "SC": 1210, "ST": 3100, "EWS": 210 }
+          }
+        }
+      ]
+    }
+  ]
+}

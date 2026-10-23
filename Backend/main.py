@@ -51,6 +51,8 @@ from routers.syllabus_coverage_router import router as syllabus_coverage_router 
 from routers.analytics_router import router as analytics_router  # Analytics and performance insights
 from routers.syllabus_coverage_router import router as syllabus_coverage_router  # Syllabus coverage tracking
 from routers.hermes_router import router as hermes_router  # Hermes 1-to-1 AI mentor (SOUL prompt agent, micro-topic state machine, daily summaries)
+from routers.marks_router import router as marks_router  # MARKS ecosystem (CPYQB, Custom Test Generator, RFC, Smart/Error Notebooks, Assignments, Heatmaps & Leagues, NEET NCERT)
+from routers.sathee_ai_router import router as sathee_ai_router  # SATHEE AI Hub & Admissions (Vision OCR, SSE Socratic Stream, Similar Questions, Rank Predictor, College Cutoffs, OMR Grader)
 
 # Vertex AI is no longer needed - using Gemini API directly
 
@@ -342,6 +344,12 @@ app.include_router(
     # Prefix and tags are already defined in the router
     # Endpoints: /api/hermes/chat, /api/hermes/quiz/attempt, /api/hermes/progress, etc.
 )
+
+# MARKS Competitive Ecosystem router
+app.include_router(marks_router)
+
+# SATHEE AI Hub & Admissions router
+app.include_router(sathee_ai_router)
 
 
 # Root endpoint
