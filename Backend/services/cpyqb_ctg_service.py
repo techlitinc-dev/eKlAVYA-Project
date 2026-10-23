@@ -119,12 +119,15 @@ class CPYQBAndCTGService:
         error_recorder: Optional[Callable[..., Dict[str, Any]]] = None,
         heatmap_recorder: Optional[Callable[[str, int], None]] = None,
     ):
+        self.error_recorder = error_recorder
+        self.heatmap_recorder = heatmap_recorder
+        self.reload_dataset()
+
+    def reload_dataset(self) -> None:
         self.dataset = load_pyq_dataset()
         self.questions: List[Dict[str, Any]] = self.dataset.get("pyq_questions", [])
         self.questions_by_id: Dict[str, Dict[str, Any]] = {q["id"]: q for q in self.questions}
         self.ncert_modules: List[Dict[str, Any]] = self.dataset.get("ncert_modules", [])
-        self.error_recorder = error_recorder
-        self.heatmap_recorder = heatmap_recorder
 
     def _get_student_attempts(self, student_id: str) -> Dict[str, Dict[str, Any]]:
         return _STATE["user_attempts"].setdefault(student_id, {})

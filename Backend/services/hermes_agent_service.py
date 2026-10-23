@@ -287,13 +287,28 @@ class HermesAgentService:
                 "it together. You're closer than you think!",
                 True,
             )
-        client = get_gemini_client()
-        text = await client.generate_content_async(
-            prompt=prompt,
-            temperature=0.7,
-            max_output_tokens=max_tokens,
-        )
-        return text, False
+        try:
+            client = get_gemini_client()
+            text = await client.generate_content_async(
+                prompt=prompt,
+                temperature=0.7,
+                max_output_tokens=max_tokens,
+            )
+            return text, False
+        except Exception as exc:
+            logger.warning(f"Gemini call failed ({exc}); using deterministic Socratic fallback")
+            return (
+                "Let's think through this step by step! As your Socratic mentor, I won't hand "
+                "you the final numerical answer directly, because deriving it yourself builds "
+                "exam-hall intuition.\n\n"
+                "1. **Identify the Governing Law:** Write down the fundamental relation connecting "
+                "the given physical/mathematical quantities (e.g., $\\tau = I \\alpha$, "
+                "$E = K + U$, or $\\int_0^a f(x)\\,dx = \\int_0^a f(a-x)\\,dx$).\n"
+                "2. **Check Boundary Conditions:** Substitute the known parameters carefully.\n\n"
+                "**Guiding Question:** Which conservation law or standard identity applies first here? "
+                "Reply with your first step and we'll verify it together!",
+                True,
+            )
 
     # ── Chat ─────────────────────────────────────────────────────────
 

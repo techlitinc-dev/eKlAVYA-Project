@@ -235,17 +235,32 @@ class HermesSummaryService:
         prompt = self._build_prompt(
             child_name, LANGUAGE_NAMES.get(language, "English"), date_str, usage, progress, locked_topics
         )
-        client = get_gemini_client()
-        raw = await client.generate_content_async(
-            prompt=prompt,
-            temperature=0.6,
-            max_output_tokens=SUMMARY_MAX_OUTPUT_TOKENS,
-        )
         try:
+            client = get_gemini_client()
+            raw = await client.generate_content_async(
+                prompt=prompt,
+                temperature=0.6,
+                max_output_tokens=SUMMARY_MAX_OUTPUT_TOKENS,
+            )
             return json.loads(_extract_json(raw))
-        except (json.JSONDecodeError, ValueError):
-            logger.warning("Summary JSON parse failed; using raw text for both versions")
-            return {"student_version": raw, "parent_version": raw}
+        except Exception as exc:
+            logger.warning(f"Summary generation fallback ({exc})")
+            turns = usage.get("chat_turns", 0)
+            quizzes = usage.get("quiz_attempts", 0)
+            pct = progress.get("completion_pct", 0)
+            walls = ", ".join(locked_topics) if locked_topics else "None"
+            return {
+                "student_version": (
+                    f"Great consistency today, {child_name}! You completed {turns} Socratic mentor turns "
+                    f"and {quizzes} topic quiz attempts, bringing your overall syllabus mastery to {pct}%. "
+                    f"Keep up the momentum tomorrow!"
+                ),
+                "parent_version": (
+                    f"Daily Progress Report for {child_name} ({date_str}): Completed {turns} Socratic AI "
+                    f"mentor interactions and {quizzes} mastery quizzes today. Overall syllabus completion "
+                    f"stands at {pct}%. Active Concept Walls requiring revision: {walls}."
+                ),
+            }
 
     @staticmethod
     def _build_prompt(

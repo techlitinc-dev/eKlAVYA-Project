@@ -28,7 +28,7 @@
       "numericalTolerance": 0.0,
       "correctMarks": 4,
       "negativeMarks": -1,
-      "solutionHtml": "<p>For a body rolling without slipping down an incline of angle $\\theta$, the linear acceleration is given by $a = \\frac{g \\sin \\theta}{1 + I / (M R^2)}$. For a solid sphere, $I = \\frac{2}{5} M R^2$, so $a = \\frac{g \\sin \\theta}{1 + 2/5} = \\frac{5}{7} g \\sin \\theta$.</p>",
+      "solutionHtml": "<p>For a body rolling without slipping down an incline of angle $\\theta$, the linear acceleration is given by $$a = \\frac{g \\sin \\theta}{1 + \\frac{I}{M R^2}}$$ For a solid sphere, $I = \\frac{2}{5} M R^2$, so $a = \\frac{g \\sin \\theta}{1 + 2/5} = \\frac{5}{7} g \\sin \\theta$.</p>",
       "commonMistakeType": "formula_mixup",
       "hasVideoSolution": true,
       "videoContentId": "vdo_ph_rot_01"
@@ -56,7 +56,7 @@
       "numericalTolerance": 0.1,
       "correctMarks": 4,
       "negativeMarks": 0,
-      "solutionHtml": "<p>Moment of inertia of a uniform disc $I = \\frac{1}{2} M R^2 = \\frac{1}{2} \\times 4 \\times 2^2 = 8\\text{ kg}\\cdot\\text{m}^2$. Rotational kinetic energy $K = \\frac{1}{2} I \\omega^2 = \\frac{1}{2} \\times 8 \\times 3^2 = 36\\text{ J}$.</p>",
+      "solutionHtml": "<p>Moment of inertia of a uniform disc $I = \\frac{1}{2} M R^2 = \\frac{1}{2} \\times 4 \\times 2^2 = 8\\text{ kg}\\cdot\\text{m}^2$. Rotational kinetic energy $$K = \\frac{1}{2} I \\omega^2 = \\frac{1}{2} \\times 8 \\times 3^2 = 36\\text{ J}$$</p>",
       "commonMistakeType": "calculation",
       "hasVideoSolution": true,
       "videoContentId": "vdo_ph_rot_02"
@@ -89,10 +89,104 @@
       "numericalTolerance": 0.0,
       "correctMarks": 4,
       "negativeMarks": -1,
-      "solutionHtml": "<p>For equilibrium of extreme charge $Q$, net force must be zero: $\\frac{k Q^2}{(2x)^2} + \\frac{k Q q}{x^2} = 0 \\implies \\frac{Q}{4} + q = 0 \\implies q = -\\frac{Q}{4}$.</p>",
+      "solutionHtml": "<p>For equilibrium of extreme charge $Q$, net electrostatic force must be zero: $$\\frac{k Q^2}{(2x)^2} + \\frac{k Q q}{x^2} = 0 \\implies \\frac{Q}{4} + q = 0 \\implies q = -\\frac{Q}{4}$$</p>",
       "commonMistakeType": "conceptual",
       "hasVideoSolution": true,
       "videoContentId": "vdo_ph_elec_01"
+    },
+    {
+      "id": "q_jee_2024_ph_04",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "physics",
+      "subject": "Physics",
+      "chapterId": "current_electricity",
+      "chapter": "Current Electricity",
+      "topicId": "kirchhoff_laws",
+      "topic": "Kirchhoff's Laws & Wheatstone Bridge",
+      "year": 2024,
+      "shift": "01 Feb Shift 1",
+      "type": "NAT",
+      "difficulty": "medium",
+      "revisionZone": "high_yield",
+      "ncertPages": "Class 12, pp. 115-121",
+      "statementHtml": "<p>In a balanced meter bridge experiment, the balancing length from the left end is found to be $40\\text{ cm}$ when a standard resistance of $12\\,\\Omega$ is placed in the right gap. Find the value of the unknown resistance in the left gap (in $\\Omega$).</p>",
+      "options": [],
+      "correctOption": null,
+      "numericalAnswer": 8.0,
+      "numericalTolerance": 0.1,
+      "correctMarks": 4,
+      "negativeMarks": 0,
+      "solutionHtml": "<p>For a balanced meter bridge, $$\\frac{X}{R} = \\frac{l}{100 - l} \\implies \\frac{X}{12} = \\frac{40}{60} = \\frac{2}{3} \\implies X = 8\\,\\Omega$$</p>",
+      "commonMistakeType": "formula_mixup",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ph_curr_01"
+    },
+    {
+      "id": "q_jee_2024_ph_05",
+      "examId": "jee_advanced",
+      "exam": "JEE Advanced",
+      "subjectId": "physics",
+      "subject": "Physics",
+      "chapterId": "modern_physics",
+      "chapter": "Modern Physics",
+      "topicId": "photoelectric_effect",
+      "topic": "Photoelectric Effect & Matter Waves",
+      "year": 2024,
+      "shift": "Paper 1",
+      "type": "MCQ",
+      "difficulty": "hard",
+      "revisionZone": "high_yield",
+      "ncertPages": "Class 12, pp. 388-395",
+      "statementHtml": "<p>A proton and an $\\alpha$-particle are accelerated from rest through the same potential difference $V$. The ratio of their de Broglie wavelengths $\\lambda_p : \\lambda_\\alpha$ is:</p>",
+      "options": [
+        { "key": "A", "html": "<p>$2\\sqrt{2} : 1$</p>" },
+        { "key": "B", "html": "<p>$1 : 2\\sqrt{2}$</p>" },
+        { "key": "C", "html": "<p>$2 : 1$</p>" },
+        { "key": "D", "html": "<p>$4 : 1$</p>" }
+      ],
+      "correctOption": "A",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>De Broglie wavelength $\\lambda = \\frac{h}{\\sqrt{2 m q V}}$. Since $m_\\alpha = 4 m_p$ and $q_\\alpha = 2 q_p$, $$\\frac{\\lambda_p}{\\lambda_\\alpha} = \\sqrt{\\frac{m_\\alpha q_\\alpha}{m_p q_p}} = \\sqrt{4 \\times 2} = 2\\sqrt{2} : 1$$</p>",
+      "commonMistakeType": "silly",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ph_mod_01"
+    },
+    {
+      "id": "q_jee_2023_ph_06",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "physics",
+      "subject": "Physics",
+      "chapterId": "thermodynamics",
+      "chapter": "Thermodynamics",
+      "topicId": "carnot_engine",
+      "topic": "First & Second Laws of Thermodynamics",
+      "year": 2023,
+      "shift": "08 Apr Shift 2",
+      "type": "MCQ",
+      "difficulty": "medium",
+      "revisionZone": "must_revise",
+      "ncertPages": "Class 11, pp. 306-315",
+      "statementHtml": "<p>A Carnot engine operates between source temperature $600\\text{ K}$ and sink temperature $300\\text{ K}$. If it absorbs $1200\\text{ J}$ of heat per cycle from the source, the mechanical work done per cycle is:</p>",
+      "options": [
+        { "key": "A", "html": "<p>$300\\text{ J}$</p>" },
+        { "key": "B", "html": "<p>$600\\text{ J}$</p>" },
+        { "key": "C", "html": "<p>$800\\text{ J}$</p>" },
+        { "key": "D", "html": "<p>$900\\text{ J}$</p>" }
+      ],
+      "correctOption": "B",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>Carnot efficiency $\\eta = 1 - \\frac{T_C}{T_H} = 1 - \\frac{300}{600} = 0.5$. Work done $W = \\eta Q_H = 0.5 \\times 1200 = 600\\text{ J}$.</p>",
+      "commonMistakeType": "calculation",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ph_thermo_01"
     },
     {
       "id": "q_jee_2024_ch_01",
@@ -122,10 +216,104 @@
       "numericalTolerance": 0.0,
       "correctMarks": 4,
       "negativeMarks": -1,
-      "solutionHtml": "<p>$t_{99.9\\%} = \\frac{2.303}{k} \\log\\left(\\frac{100}{0.1}\\right) = \\frac{2.303 \\times 3}{k}$. Since $t_{1/2} = \\frac{2.303 \\times 0.3010}{k}$, $\\frac{t_{99.9\\%}}{t_{1/2}} = \\frac{3}{0.3010} \\approx 10$.</p>",
+      "solutionHtml": "<p>$$t_{99.9\\%} = \\frac{2.303}{k} \\log\\left(\\frac{100}{0.1}\\right) = \\frac{2.303 \\times 3}{k}$$ Since $t_{1/2} = \\frac{2.303 \\times 0.3010}{k}$, $\\frac{t_{99.9\\%}}{t_{1/2}} = \\frac{3}{0.3010} \\approx 10$.</p>",
       "commonMistakeType": "calculation",
       "hasVideoSolution": true,
       "videoContentId": "vdo_ch_kin_01"
+    },
+    {
+      "id": "q_jee_2024_ch_02",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "chemistry",
+      "subject": "Chemistry",
+      "chapterId": "electrochemistry",
+      "chapter": "Electrochemistry",
+      "topicId": "nernst_equation",
+      "topic": "Nernst Equation & Gibbs Free Energy",
+      "year": 2024,
+      "shift": "29 Jan Shift 2",
+      "type": "MCQ",
+      "difficulty": "medium",
+      "revisionZone": "high_yield",
+      "ncertPages": "Class 12, pp. 68-74",
+      "statementHtml": "<p>For the Daniell cell $\\text{Zn}(s) + \\text{Cu}^{2+}(aq) \\rightarrow \\text{Zn}^{2+}(aq) + \\text{Cu}(s)$, if the standard cell potential $E^\\circ_{\\text{cell}} = 1.10\\text{ V}$, what is the standard Gibbs free energy change $\\Delta G^\\circ$ (given $F = 96500\\text{ C/mol}$)?</p>",
+      "options": [
+        { "key": "A", "html": "<p>$-212.3\\text{ kJ/mol}$</p>" },
+        { "key": "B", "html": "<p>$-106.15\\text{ kJ/mol}$</p>" },
+        { "key": "C", "html": "<p>$+212.3\\text{ kJ/mol}$</p>" },
+        { "key": "D", "html": "<p>$-424.6\\text{ kJ/mol}$</p>" }
+      ],
+      "correctOption": "A",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>Here $n = 2$ moles of electrons transferred. $$\\Delta G^\\circ = -n F E^\\circ_{\\text{cell}} = -2 \\times 96500 \\times 1.10 = -212300\\text{ J/mol} = -212.3\\text{ kJ/mol}$$</p>",
+      "commonMistakeType": "formula_mixup",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ch_elec_01"
+    },
+    {
+      "id": "q_jee_2023_ch_03",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "chemistry",
+      "subject": "Chemistry",
+      "chapterId": "coordination_compounds",
+      "chapter": "Coordination Compounds",
+      "topicId": "crystal_field_theory",
+      "topic": "Crystal Field Theory & Magnetic Moment",
+      "year": 2023,
+      "shift": "10 Apr Shift 1",
+      "type": "NAT",
+      "difficulty": "medium",
+      "revisionZone": "trap_zone",
+      "ncertPages": "Class 12, pp. 255-261",
+      "statementHtml": "<p>Find the number of unpaired electrons in the low-spin octahedral complex $[\\text{Fe}(\\text{CN})_6]^{4-}$ (Atomic number of $\\text{Fe} = 26$).</p>",
+      "options": [],
+      "correctOption": null,
+      "numericalAnswer": 0.0,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": 0,
+      "solutionHtml": "<p>In $[\\text{Fe}(\\text{CN})_6]^{4-}$, iron is in the $+2$ oxidation state ($3d^6$). Since $\\text{CN}^-$ is a strong-field ligand, all $6$ electrons pair up in the $t_{2g}$ orbitals ($t_{2g}^6 e_g^0$), leaving $0$ unpaired electrons.</p>",
+      "commonMistakeType": "conceptual",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ch_coord_01"
+    },
+    {
+      "id": "q_jee_2024_ch_04",
+      "examId": "jee_advanced",
+      "exam": "JEE Advanced",
+      "subjectId": "chemistry",
+      "subject": "Chemistry",
+      "chapterId": "thermodynamics_chem",
+      "chapter": "Chemical Thermodynamics",
+      "topicId": "gibbs_spontaneity",
+      "topic": "Entropy & Gibbs Energy",
+      "year": 2024,
+      "shift": "Paper 2",
+      "type": "MCQ",
+      "difficulty": "hard",
+      "revisionZone": "must_revise",
+      "ncertPages": "Class 11, pp. 176-184",
+      "statementHtml": "<p>For a chemical reaction with $\\Delta H^\\circ = +40\\text{ kJ/mol}$ and $\\Delta S^\\circ = +100\\text{ J}\\cdot\\text{K}^{-1}\\text{mol}^{-1}$, the reaction becomes spontaneous above the temperature:</p>",
+      "options": [
+        { "key": "A", "html": "<p>$250\\text{ K}$</p>" },
+        { "key": "B", "html": "<p>$400\\text{ K}$</p>" },
+        { "key": "C", "html": "<p>$300\\text{ K}$</p>" },
+        { "key": "D", "html": "<p>$500\\text{ K}$</p>" }
+      ],
+      "correctOption": "B",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>For spontaneity, $\\Delta G = \\Delta H - T \\Delta S < 0 \\implies T > \\frac{\\Delta H}{\\Delta S} = \\frac{40000\\text{ J/mol}}{100\\text{ J}\\cdot\\text{K}^{-1}\\text{mol}^{-1}} = 400\\text{ K}$.</p>",
+      "commonMistakeType": "silly",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ch_thermo_01"
     },
     {
       "id": "q_jee_2024_ma_01",
@@ -155,10 +343,104 @@
       "numericalTolerance": 0.0,
       "correctMarks": 4,
       "negativeMarks": -1,
-      "solutionHtml": "<p>Using King's property $\\int_0^a f(x)dx = \\int_0^a f(a-x)dx$, adding both gives $2I = \\int_0^{\\pi/2} 1\\,dx = \\frac{\\pi}{2} \\implies I = \\frac{\\pi}{4}$.</p>",
+      "solutionHtml": "<p>Using King's property $\\int_0^a f(x)dx = \\int_0^a f(a-x)dx$, adding both gives $$2I = \\int_0^{\\pi/2} 1\\,dx = \\frac{\\pi}{2} \\implies I = \\frac{\\pi}{4}$$</p>",
       "commonMistakeType": "formula_mixup",
       "hasVideoSolution": true,
       "videoContentId": "vdo_ma_int_01"
+    },
+    {
+      "id": "q_jee_2024_ma_02",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "mathematics",
+      "subject": "Mathematics",
+      "chapterId": "matrices_determinants",
+      "chapter": "Matrices and Determinants",
+      "topicId": "adjoint_properties",
+      "topic": "Properties of Adjoint & Inverse",
+      "year": 2024,
+      "shift": "27 Jan Shift 2",
+      "type": "NAT",
+      "difficulty": "medium",
+      "revisionZone": "high_yield",
+      "ncertPages": "Class 12, pp. 119-128",
+      "statementHtml": "<p>If $A$ is a $3 \\times 3$ non-singular matrix such that $|A| = 5$, then the value of $|\\text{adj}(A)|$ is:</p>",
+      "options": [],
+      "correctOption": null,
+      "numericalAnswer": 25.0,
+      "numericalTolerance": 0.1,
+      "correctMarks": 4,
+      "negativeMarks": 0,
+      "solutionHtml": "<p>For an $n \\times n$ matrix $A$, $|\\text{adj}(A)| = |A|^{n-1}$. Here $n = 3$ and $|A| = 5$, so $|\\text{adj}(A)| = 5^{3-1} = 25$.</p>",
+      "commonMistakeType": "formula_mixup",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ma_mat_01"
+    },
+    {
+      "id": "q_jee_2023_ma_03",
+      "examId": "jee_main",
+      "exam": "JEE Main",
+      "subjectId": "mathematics",
+      "subject": "Mathematics",
+      "chapterId": "conic_sections",
+      "chapter": "Conic Sections",
+      "topicId": "parabola_tangents",
+      "topic": "Focal Chord & Tangents of Parabola",
+      "year": 2023,
+      "shift": "11 Apr Shift 1",
+      "type": "MCQ",
+      "difficulty": "easy",
+      "revisionZone": "must_revise",
+      "ncertPages": "Class 11, pp. 242-248",
+      "statementHtml": "<p>The length of the latus rectum of the parabola $y^2 = 16x$ is:</p>",
+      "options": [
+        { "key": "A", "html": "<p>$4$</p>" },
+        { "key": "B", "html": "<p>$8$</p>" },
+        { "key": "C", "html": "<p>$16$</p>" },
+        { "key": "D", "html": "<p>$32$</p>" }
+      ],
+      "correctOption": "C",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>Comparing $y^2 = 16x$ with standard form $y^2 = 4ax$, the length of the latus rectum is $4a = 16$.</p>",
+      "commonMistakeType": "silly",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ma_conic_01"
+    },
+    {
+      "id": "q_jee_2024_ma_04",
+      "examId": "jee_advanced",
+      "exam": "JEE Advanced",
+      "subjectId": "mathematics",
+      "subject": "Mathematics",
+      "chapterId": "differential_equations",
+      "chapter": "Differential Equations",
+      "topicId": "linear_de",
+      "topic": "First-Order Linear Differential Equations",
+      "year": 2024,
+      "shift": "Paper 1",
+      "type": "MCQ",
+      "difficulty": "hard",
+      "revisionZone": "trap_zone",
+      "ncertPages": "Class 12, pp. 402-411",
+      "statementHtml": "<p>The integrating factor of the linear differential equation $x \\frac{dy}{dx} + 2y = x^2 \\log x$ ($x > 0$) is:</p>",
+      "options": [
+        { "key": "A", "html": "<p>$e^{2x}$</p>" },
+        { "key": "B", "html": "<p>$x^2$</p>" },
+        { "key": "C", "html": "<p>$\\frac{1}{x^2}$</p>" },
+        { "key": "D", "html": "<p>$2 \\ln x$</p>" }
+      ],
+      "correctOption": "B",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>Divide by $x$ to put into standard form $\\frac{dy}{dx} + \\frac{2}{x}y = x \\log x$. Here $P(x) = \\frac{2}{x}$, so $$\\text{I.F.} = e^{\\int \\frac{2}{x} dx} = e^{2 \\ln x} = x^2$$</p>",
+      "commonMistakeType": "conceptual",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_ma_de_01"
     },
     {
       "id": "q_neet_2024_bio_01",
@@ -225,6 +507,72 @@
       "commonMistakeType": "conceptual",
       "hasVideoSolution": true,
       "videoContentId": "vdo_bio_mol_01"
+    },
+    {
+      "id": "q_neet_2024_bio_03",
+      "examId": "neet",
+      "exam": "NEET-UG",
+      "subjectId": "biology",
+      "subject": "Biology",
+      "chapterId": "human_physiology",
+      "chapter": "Breathing and Exchange of Gases",
+      "topicId": "oxygen_dissociation",
+      "topic": "Oxygen Dissociation Curve",
+      "year": 2024,
+      "shift": "05 May Single Shift",
+      "type": "MCQ",
+      "difficulty": "medium",
+      "revisionZone": "high_yield",
+      "ncertPages": "Class 11 Biology, pp. 274-276",
+      "statementHtml": "<p>Which of the following conditions in the alveoli favors the formation of oxyhaemoglobin ($\\text{HbO}_2$)?</p>",
+      "options": [
+        { "key": "A", "html": "<p>High $p\\text{O}_2$, low $p\\text{CO}_2$, lesser $\\text{H}^+$ concentration, and lower temperature</p>" },
+        { "key": "B", "html": "<p>Low $p\\text{O}_2$, high $p\\text{CO}_2$, higher $\\text{H}^+$ concentration, and higher temperature</p>" },
+        { "key": "C", "html": "<p>High $p\\text{O}_2$, high $p\\text{CO}_2$, and lower pH</p>" },
+        { "key": "D", "html": "<p>Low $p\\text{O}_2$, low $p\\text{CO}_2$, and higher temperature</p>" }
+      ],
+      "correctOption": "A",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>In the alveoli, high partial pressure of oxygen ($p\\text{O}_2$), low $p\\text{CO}_2$, lower $\\text{H}^+$ concentration (higher pH), and lower temperature shift the oxygen dissociation curve to the left, favoring oxyhaemoglobin formation (NCERT Class 11, p. 274).</p>",
+      "commonMistakeType": "conceptual",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_bio_phys_01"
+    },
+    {
+      "id": "q_neet_2024_bio_04",
+      "examId": "neet",
+      "exam": "NEET-UG",
+      "subjectId": "biology",
+      "subject": "Biology",
+      "chapterId": "principles_inheritance",
+      "chapter": "Principles of Inheritance and Variation",
+      "topicId": "mendelian_genetics",
+      "topic": "Dihybrid Cross & Independent Assortment",
+      "year": 2024,
+      "shift": "05 May Single Shift",
+      "type": "MCQ",
+      "difficulty": "easy",
+      "revisionZone": "must_revise",
+      "ncertPages": "Class 12 Biology, pp. 78-82",
+      "statementHtml": "<p>In a standard Mendelian dihybrid cross between two doubly heterozygous pea plants ($RrYy \\times RrYy$), what fraction of the $F_2$ progeny is homozygous recessive for both traits ($rryy$)?</p>",
+      "options": [
+        { "key": "A", "html": "<p>$\\frac{9}{16}$</p>" },
+        { "key": "B", "html": "<p>$\\frac{3}{16}$</p>" },
+        { "key": "C", "html": "<p>$\\frac{1}{16}$</p>" },
+        { "key": "D", "html": "<p>$\\frac{1}{4}$</p>" }
+      ],
+      "correctOption": "C",
+      "numericalAnswer": null,
+      "numericalTolerance": 0.0,
+      "correctMarks": 4,
+      "negativeMarks": -1,
+      "solutionHtml": "<p>In a dihybrid cross $RrYy \\times RrYy$, the phenotypic ratio is $9:3:3:1$, and the probability of obtaining $rryy$ is $\\frac{1}{4} \\times \\frac{1}{4} = \\frac{1}{16}$.</p>",
+      "commonMistakeType": "silly",
+      "hasVideoSolution": true,
+      "videoContentId": "vdo_bio_gen_01"
     }
   ],
   "ncert_modules": [
@@ -253,6 +601,30 @@
       "trapZoneCount": 35
     },
     {
+      "moduleId": "ncert_bio_03",
+      "subjectId": "biology",
+      "book": "Class 11 Biology",
+      "chapterId": "human_physiology",
+      "chapterName": "Breathing and Exchange of Gases",
+      "ncertPages": "268-277",
+      "totalQuestions": 95,
+      "highYieldCount": 40,
+      "mustReviseCount": 35,
+      "trapZoneCount": 20
+    },
+    {
+      "moduleId": "ncert_bio_04",
+      "subjectId": "biology",
+      "book": "Class 12 Biology",
+      "chapterId": "principles_inheritance",
+      "chapterName": "Principles of Inheritance and Variation",
+      "ncertPages": "69-94",
+      "totalQuestions": 140,
+      "highYieldCount": 60,
+      "mustReviseCount": 50,
+      "trapZoneCount": 30
+    },
+    {
       "moduleId": "ncert_chem_01",
       "subjectId": "chemistry",
       "book": "Class 12 Chemistry Part 1",
@@ -262,6 +634,18 @@
       "totalQuestions": 95,
       "highYieldCount": 40,
       "mustReviseCount": 35,
+      "trapZoneCount": 20
+    },
+    {
+      "moduleId": "ncert_chem_02",
+      "subjectId": "chemistry",
+      "book": "Class 12 Chemistry Part 1",
+      "chapterId": "electrochemistry",
+      "chapterName": "Electrochemistry",
+      "ncertPages": "65-94",
+      "totalQuestions": 110,
+      "highYieldCount": 50,
+      "mustReviseCount": 40,
       "trapZoneCount": 20
     },
     {
@@ -275,6 +659,18 @@
       "highYieldCount": 45,
       "mustReviseCount": 40,
       "trapZoneCount": 25
+    },
+    {
+      "moduleId": "ncert_phy_02",
+      "subjectId": "physics",
+      "book": "Class 12 Physics Part 1",
+      "chapterId": "electrostatics",
+      "chapterName": "Electric Charges and Fields",
+      "ncertPages": "1-50",
+      "totalQuestions": 105,
+      "highYieldCount": 45,
+      "mustReviseCount": 38,
+      "trapZoneCount": 22
     }
   ],
   "colleges": [
@@ -303,6 +699,43 @@
             "2025": { "General": 480, "OBC-NCL": 820, "SC": 2400, "ST": 1150, "EWS": 690 },
             "2024": { "General": 510, "OBC-NCL": 860, "SC": 2510, "ST": 1200, "EWS": 710 }
           }
+        },
+        {
+          "branchCode": "ME",
+          "branchName": "Mechanical Engineering",
+          "seats": 140,
+          "cutoffs": {
+            "2025": { "General": 1680, "OBC-NCL": 2890, "SC": 6200, "ST": 3100, "EWS": 2150 },
+            "2024": { "General": 1730, "OBC-NCL": 2950, "SC": 6400, "ST": 3250, "EWS": 2220 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "iit_delhi",
+      "name": "Indian Institute of Technology Delhi",
+      "exam": "jee_advanced",
+      "nirfRank": 2,
+      "state": "Delhi",
+      "city": "New Delhi",
+      "branches": [
+        {
+          "branchCode": "CSE",
+          "branchName": "Computer Science and Engineering",
+          "seats": 118,
+          "cutoffs": {
+            "2025": { "General": 116, "OBC-NCL": 240, "SC": 1120, "ST": 560, "EWS": 310 },
+            "2024": { "General": 122, "OBC-NCL": 255, "SC": 1180, "ST": 590, "EWS": 330 }
+          }
+        },
+        {
+          "branchCode": "MNC",
+          "branchName": "Mathematics and Computing",
+          "seats": 85,
+          "cutoffs": {
+            "2025": { "General": 330, "OBC-NCL": 640, "SC": 1950, "ST": 980, "EWS": 490 },
+            "2024": { "General": 350, "OBC-NCL": 670, "SC": 2050, "ST": 1020, "EWS": 510 }
+          }
         }
       ]
     },
@@ -321,6 +754,15 @@
           "cutoffs": {
             "2025": { "General": 248, "OBC-NCL": 510, "SC": 1650, "ST": 820, "EWS": 380 },
             "2024": { "General": 255, "OBC-NCL": 530, "SC": 1700, "ST": 850, "EWS": 395 }
+          }
+        },
+        {
+          "branchCode": "AE",
+          "branchName": "Aerospace Engineering",
+          "seats": 75,
+          "cutoffs": {
+            "2025": { "General": 3450, "OBC-NCL": 5400, "SC": 9800, "ST": 4900, "EWS": 4200 },
+            "2024": { "General": 3580, "OBC-NCL": 5600, "SC": 10100, "ST": 5100, "EWS": 4350 }
           }
         }
       ]
@@ -354,6 +796,34 @@
       ]
     },
     {
+      "id": "nit_surathkal",
+      "name": "National Institute of Technology Karnataka, Surathkal",
+      "exam": "jee_main",
+      "nirfRank": 12,
+      "state": "Karnataka",
+      "city": "Mangaluru",
+      "branches": [
+        {
+          "branchCode": "CSE",
+          "branchName": "Computer Science and Engineering",
+          "seats": 135,
+          "cutoffs": {
+            "2025": { "General": 1620, "OBC-NCL": 3100, "SC": 11200, "ST": 5200, "EWS": 2350 },
+            "2024": { "General": 1710, "OBC-NCL": 3250, "SC": 11500, "ST": 5400, "EWS": 2480 }
+          }
+        },
+        {
+          "branchCode": "IT",
+          "branchName": "Information Technology",
+          "seats": 110,
+          "cutoffs": {
+            "2025": { "General": 2450, "OBC-NCL": 4300, "SC": 14100, "ST": 6800, "EWS": 3200 },
+            "2024": { "General": 2580, "OBC-NCL": 4450, "SC": 14500, "ST": 7050, "EWS": 3350 }
+          }
+        }
+      ]
+    },
+    {
       "id": "aiims_delhi",
       "name": "All India Institute of Medical Sciences, New Delhi",
       "exam": "neet",
@@ -368,6 +838,25 @@
           "cutoffs": {
             "2025": { "General": 57, "OBC-NCL": 240, "SC": 1150, "ST": 2900, "EWS": 195 },
             "2024": { "General": 61, "OBC-NCL": 255, "SC": 1210, "ST": 3100, "EWS": 210 }
+          }
+        }
+      ]
+    },
+    {
+      "id": "jipmer_puducherry",
+      "name": "Jawaharlal Institute of Postgraduate Medical Education & Research",
+      "exam": "neet",
+      "nirfRank": 5,
+      "state": "Puducherry",
+      "city": "Puducherry",
+      "branches": [
+        {
+          "branchCode": "MBBS",
+          "branchName": "Bachelor of Medicine and Bachelor of Surgery (MBBS)",
+          "seats": 180,
+          "cutoffs": {
+            "2025": { "General": 290, "OBC-NCL": 680, "SC": 4200, "ST": 8900, "EWS": 540 },
+            "2024": { "General": 310, "OBC-NCL": 710, "SC": 4400, "ST": 9100, "EWS": 580 }
           }
         }
       ]

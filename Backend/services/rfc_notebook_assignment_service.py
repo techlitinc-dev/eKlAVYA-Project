@@ -197,11 +197,153 @@ class MarksEcosystemService:
     """Service managing RFC, Smart Notebooks, Error Notebook, Assignments, Heatmaps & Leagues."""
 
     def __init__(self):
+        self.reload_dataset()
+        self._seed_defaults()
+
+    def reload_dataset(self) -> None:
         self.cards = load_all_flashcards()
         self.cards_by_id = {c["cardId"]: c for c in self.cards}
         self.pyq_data = load_pyq_dataset()
         self.questions = self.pyq_data.get("pyq_questions", [])
         self.questions_by_id = {q["id"]: q for q in self.questions}
+
+    def _seed_defaults(self) -> None:
+        """Seed realistic initial activity, notebooks, errors, and assignment 6X9A21 if empty."""
+        if "6X9A21" not in _ECOSYSTEM_STATE["assignment_codes"]:
+            q_ids = [
+                q["id"]
+                for q in self.questions[:4]
+                if q["id"] in self.questions_by_id
+            ]
+            if q_ids:
+                as_id = "as_demo_6x9a21"
+                now_iso = datetime.now(timezone.utc).isoformat()
+                _ECOSYSTEM_STATE["assignments"][as_id] = {
+                    "assignmentId": as_id,
+                    "creatorId": "parent_demo_01",
+                    "title": "Weekly Electrostatics, Rotation & Calculus Drill",
+                    "subjectId": "physics",
+                    "questionIds": q_ids,
+                    "dueDate": (datetime.now(timezone.utc) + timedelta(days=5)).isoformat(),
+                    "timeLimitMinutes": 30,
+                    "joinCode": "6X9A21",
+                    "shareUrl": "https://link.getmarks.app/assignment/student?code=6X9A21",
+                    "submissions": [
+                        {
+                            "submissionId": "sub_demo_01",
+                            "studentId": "Aarav Sharma",
+                            "score": 12,
+                            "totalMarks": len(q_ids) * 4,
+                            "correct": 3,
+                            "incorrect": 0,
+                            "timeTakenSeconds": 340,
+                            "perQuestionCorrect": {qid: (idx < 3) for idx, qid in enumerate(q_ids)},
+                            "submittedAt": now_iso,
+                        },
+                        {
+                            "submissionId": "sub_demo_02",
+                            "studentId": "Priya Nair",
+                            "score": 7,
+                            "totalMarks": len(q_ids) * 4,
+                            "correct": 2,
+                            "incorrect": 1,
+                            "timeTakenSeconds": 410,
+                            "perQuestionCorrect": {qid: (idx < 2) for idx, qid in enumerate(q_ids)},
+                            "submittedAt": now_iso,
+                        },
+                    ],
+                    "createdAt": now_iso,
+                }
+                _ECOSYSTEM_STATE["assignment_codes"]["6X9A21"] = as_id
+
+    def _ensure_student_seeded(self, student_id: str) -> None:
+        """Populate realistic baseline heatmap, notebooks, and error notebook for a student on first read."""
+        if student_id not in _ECOSYSTEM_STATE["daily_solved"]:
+            today = date.today()
+            solved_map: Dict[str, int] = {}
+            sample_counts = [28, 34, 31, 18, 35, 40, 22, 30, 33, 36, 29, 32, 42, 31]
+            for idx, cnt in enumerate(sample_counts):
+                d = today - timedelta(days=idx)
+                solved_map[d.isoformat()] = cnt
+            _ECOSYSTEM_STATE["daily_solved"][student_id] = solved_map
+            _ECOSYSTEM_STATE["weekly_points"].setdefault(student_id, 640)
+
+        if student_id not in _ECOSYSTEM_STATE["notebooks"]:
+            now_iso = datetime.now(timezone.utc).isoformat()
+            nb1 = "nb_rotational_traps"
+            nb2 = "nb_high_yield_kinetics"
+            _ECOSYSTEM_STATE["notebooks"][student_id] = {
+                nb1: {
+                    "notebookId": nb1,
+                    "title": "Rotational Motion & Electrostatics Traps",
+                    "colorHex": "#1589EE",
+                    "subjectId": "physics",
+                    "isPinned": True,
+                    "isArchived": False,
+                    "createdAt": now_iso,
+                },
+                nb2: {
+                    "notebookId": nb2,
+                    "title": "High-Yield Kinetics & Calculus",
+                    "colorHex": "#10B981",
+                    "subjectId": "chemistry",
+                    "isPinned": False,
+                    "isArchived": False,
+                    "createdAt": now_iso,
+                },
+            }
+            _ECOSYSTEM_STATE["notebook_questions"].setdefault(
+                nb1,
+                {
+                    "q_jee_2024_ph_01": {
+                        "questionId": "q_jee_2024_ph_01",
+                        "studentNote": "Use I = (2/5)MR² for solid sphere rolling without slipping: a = g sinθ / (1 + K²/R²).",
+                        "addedAt": now_iso,
+                    },
+                    "q_jee_2023_ph_03": {
+                        "questionId": "q_jee_2023_ph_03",
+                        "studentNote": "Check equilibrium of extreme charge Q, not just central charge q!",
+                        "addedAt": now_iso,
+                    },
+                },
+            )
+            _ECOSYSTEM_STATE["notebook_questions"].setdefault(
+                nb2,
+                {
+                    "q_jee_2024_ch_01": {
+                        "questionId": "q_jee_2024_ch_01",
+                        "studentNote": "t_99.9% = 10 × t_1/2 for any first-order reaction.",
+                        "addedAt": now_iso,
+                    }
+                },
+            )
+
+        if student_id not in _ECOSYSTEM_STATE["error_notebook"]:
+            err_bucket: Dict[str, Dict[str, Any]] = {}
+            now_iso = datetime.now(timezone.utc).isoformat()
+            for qid, mtype, sel in [
+                ("q_jee_2023_ph_03", "conceptual", "A"),
+                ("q_jee_2024_ph_02", "calculation", "18.0"),
+            ]:
+                q = self.questions_by_id.get(qid)
+                if q:
+                    err_bucket[qid] = {
+                        "errorId": f"err_seed_{qid[-5:]}",
+                        "questionId": qid,
+                        "testName": "CPYQB Practice Mode",
+                        "subject": q["subject"],
+                        "chapter": q["chapter"],
+                        "topic": q["topic"],
+                        "questionText": q["statementHtml"],
+                        "studentSelectedOption": sel,
+                        "correctOption": q.get("correctOption") or str(q.get("numericalAnswer")),
+                        "solutionText": q["solutionHtml"],
+                        "mistakeType": mtype,
+                        "attemptCount": 2,
+                        "isMastered": False,
+                        "createdAt": now_iso,
+                    }
+            _ECOSYSTEM_STATE["error_notebook"][student_id] = err_bucket
 
     # ─── 1. Revision Flash Cards (RFC) & Formula Cards ───────────────────
 
@@ -305,6 +447,7 @@ class MarksEcosystemService:
     def list_notebooks(
         self, student_id: str, include_archived: bool = False
     ) -> List[NotebookItem]:
+        self._ensure_student_seeded(student_id)
         nb_map = _ECOSYSTEM_STATE["notebooks"].setdefault(student_id, {})
         result: List[NotebookItem] = []
         for nb_id, nb in nb_map.items():
@@ -318,6 +461,7 @@ class MarksEcosystemService:
     def update_notebook(
         self, student_id: str, notebook_id: str, request: UpdateNotebookRequest
     ) -> NotebookItem:
+        self._ensure_student_seeded(student_id)
         nb_map = _ECOSYSTEM_STATE["notebooks"].setdefault(student_id, {})
         nb = nb_map.get(notebook_id)
         if not nb:
@@ -385,6 +529,7 @@ class MarksEcosystemService:
     def get_notebook_questions(
         self, student_id: str, notebook_id: str
     ) -> Dict[str, Any]:
+        self._ensure_student_seeded(student_id)
         nb_map = _ECOSYSTEM_STATE["notebooks"].setdefault(student_id, {})
         if notebook_id not in nb_map:
             raise HTTPException(
@@ -473,6 +618,7 @@ class MarksEcosystemService:
         page: int = 1,
         limit: int = 20,
     ) -> ErrorNotebookListResponse:
+        self._ensure_student_seeded(student_id)
         err_map = _ECOSYSTEM_STATE["error_notebook"].setdefault(student_id, {})
         items: List[ErrorNotebookEntry] = []
 
@@ -497,6 +643,7 @@ class MarksEcosystemService:
         )
 
     def resolve_error(self, student_id: str, error_id: str) -> Dict[str, Any]:
+        self._ensure_student_seeded(student_id)
         err_map = _ECOSYSTEM_STATE["error_notebook"].setdefault(student_id, {})
         for entry in err_map.values():
             if entry["errorId"] == error_id or entry["questionId"] == error_id:
@@ -759,6 +906,7 @@ class MarksEcosystemService:
     def get_monthly_heatmap(
         self, student_id: str, month: Optional[str] = None
     ) -> MonthlyHeatmapResponse:
+        self._ensure_student_seeded(student_id)
         target = _ECOSYSTEM_STATE["daily_goals"].get(student_id, 30)
         m_str = month or date.today().strftime("%Y-%m")
         try:

@@ -53,6 +53,7 @@ from routers.syllabus_coverage_router import router as syllabus_coverage_router 
 from routers.hermes_router import router as hermes_router  # Hermes 1-to-1 AI mentor (SOUL prompt agent, micro-topic state machine, daily summaries)
 from routers.marks_router import router as marks_router  # MARKS ecosystem (CPYQB, Custom Test Generator, RFC, Smart/Error Notebooks, Assignments, Heatmaps & Leagues, NEET NCERT)
 from routers.sathee_ai_router import router as sathee_ai_router  # SATHEE AI Hub & Admissions (Vision OCR, SSE Socratic Stream, Similar Questions, Rank Predictor, College Cutoffs, OMR Grader)
+from routers.superadmin_router import router as superadmin_router  # SuperAdmin Governance, Live PYQ CMS, User & Subscription Admin
 
 # Vertex AI is no longer needed - using Gemini API directly
 
@@ -114,7 +115,12 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:3000",  # Frontend development server
         "http://127.0.0.1:3000",  # Alternative localhost
+        "http://localhost:3001",  # SuperAdmin server
+        "http://127.0.0.1:3001",
+        "http://localhost:5173",  # Vite default
+        "http://127.0.0.1:5173",
     ],
+    allow_origin_regex=r"https?://(localhost|127\.0\.0\.1)(:\d+)?",
     allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods (GET, POST, PUT, DELETE, etc.)
     allow_headers=["*"],  # Allow all headers
@@ -350,6 +356,9 @@ app.include_router(marks_router)
 
 # SATHEE AI Hub & Admissions router
 app.include_router(sathee_ai_router)
+
+# SuperAdmin Governance & Live CMS router
+app.include_router(superadmin_router)
 
 
 # Root endpoint
