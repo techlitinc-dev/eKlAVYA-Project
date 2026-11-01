@@ -65,6 +65,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# eKlAVYA core (syllabus-bound study planner backend)
+from core.config import get_settings
+from core.errors import install_exception_handlers
+from dependencies import RequestIDMiddleware
+from repositories.memory import InMemoryRepository
+from routers.eklavya_registry import get_eklavya_routers
+from seed import bootstrap_development_data
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -80,7 +88,23 @@ async def lifespan(app: FastAPI):
     logger.info("=" * 80)
     logger.info("Using Gemini API for all AI features (vector search and RAG)")
     logger.info("No Vertex AI initialization required")
-    
+
+    # eKlAVYA: create the shared repository and load deterministic
+    # development seed data when configured. The repository is created only
+    # if tests have not already installed one on app.state.
+    settings = get_settings()
+    settings.ensure_local_dirs()
+    if getattr(app.state, "repository", None) is None:
+        repository = InMemoryRepository()
+        if settings.seed_on_startup:
+            bootstrap_development_data(repository)
+        app.state.repository = repository
+    logger.info(
+        "eKlAVYA repository ready (backend=%s, testing_mode=%s)",
+        settings.repository_backend,
+        settings.testing_mode,
+    )
+
     logger.info("Available routes:")
     for route in app.routes:
         if hasattr(route, "methods") and hasattr(route, "path"):
@@ -131,6 +155,15 @@ app.add_middleware(
 # Add rate limiter middleware
 from middleware.rate_limiter import RateLimitMiddleware
 app.add_middleware(RateLimitMiddleware)
+
+# eKlAVYA: documented error envelope handlers and request-id stamping
+install_exception_handlers(app)
+app.add_middleware(RequestIDMiddleware)
+
+# eKlAVYA API routers (all under /api/v1)
+_settings = get_settings()
+for _eklavya_router in get_eklavya_routers():
+    app.include_router(_eklavya_router, prefix=_settings.api_v1_prefix)
 
 
 @app.exception_handler(Exception)

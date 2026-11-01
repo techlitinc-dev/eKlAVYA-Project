@@ -78,9 +78,30 @@ router = APIRouter(
 )
 
 
-# Initialize services
-rag_service = RAGService(enable_caching=True, high_quality_only=True)
-question_validator = QuestionValidator()
+# Initialize services lazily so that importing this module does not require
+# provider credentials (Gemini/Firestore). Mirrors the fallback pattern used
+# in rag_router.py.
+_rag_service = None
+_question_validator = None
+
+
+def _get_rag_service():
+    global _rag_service
+    if _rag_service is None:
+        try:
+            _rag_service = RAGService(enable_caching=True, high_quality_only=True)
+        except Exception as e:
+            logger.warning(f"Failed to initialize RAGService: {e}. Using mock service.")
+            from services.mock_rag_service import MockRAGService
+            _rag_service = MockRAGService(enable_caching=True, high_quality_only=True)
+    return _rag_service
+
+
+def _get_question_validator():
+    global _question_validator
+    if _question_validator is None:
+        _question_validator = QuestionValidator()
+    return _question_validator
 
 # Initialize Firestore client
 try:
@@ -160,7 +181,7 @@ async def generate_questions(request: RAGRequest) -> RAGResponse:
         )
         
         # Use RAG service to generate questions
-        result = rag_service.generate_for_topic(
+        result = _get_rag_service().generate_for_topic(
             topic=request.topic,
             exam_type=request.exam_type,
             difficulty=request.difficulty,
@@ -527,7 +548,7 @@ async def validate_question(question: Question) -> ValidationResult:
         logger.info(f"Validating question - Topic: {question.topic}")
         
         # Validate using QuestionValidator
-        validation_result = question_validator.validate(
+        validation_result = _get_question_validator().validate(
             question=question,
             syllabus_context=None  # Could optionally retrieve context
         )

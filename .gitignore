@@ -30,3 +30,6 @@ dist/
 build/
 *.tsbuildinfo
 
+
+# eKlAVYA local storage (uploaded scan pages, generated mock media)
+local_data/

@@ -101,11 +101,24 @@ class SyllabusCoverageTracker:
             weak_topic_threshold: Percentage below which topic is considered weak
         """
         logger.info("Initializing SyllabusCoverageTracker")
-        
-        self.firestore_client = firestore_client or get_firestore_client()
+
+        # Defer Firestore resolution until first use so that importing this
+        # module (or constructing the tracker) does not require Firebase
+        # credentials. When Firebase is configured, the client is created on
+        # first use, which is functionally identical for all callers.
+        self._firestore_client = firestore_client
+        self._firestore_client_resolved = firestore_client is not None
         self.weak_topic_threshold = weak_topic_threshold
-        
+
         logger.info(f"Coverage tracker initialized (weak threshold: {weak_topic_threshold}%)")
+
+    @property
+    def firestore_client(self):
+        """Resolve the Firestore client lazily on first access."""
+        if not self._firestore_client_resolved:
+            self._firestore_client = get_firestore_client()
+            self._firestore_client_resolved = True
+        return self._firestore_client
     
     def track_test_coverage(
         self,
